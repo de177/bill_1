@@ -30,7 +30,7 @@ class Signup extends Model
         $user = new Users();
         $user->login = $this->login;
         $user->email = $this->email;
-        $user->password = $this->password;
+        $user->password = sha1($this->password);
         return $user->save(); //вернет true или false
     }
 
