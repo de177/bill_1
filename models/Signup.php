@@ -11,4 +11,27 @@ class Signup extends Model
     public $password;
     public $email;
 
+    public function rules()
+    {
+        return [
+
+            [['login','email','password'],'required'],
+            ['login','string','min'=>3,'max'=>10],
+            ['email','email'],
+            ['email','unique','targetClass'=>'app\models\Users'],
+            ['password','string','min'=>3,'max'=>10]
+
+        ];
+    }
+
+    public function signup()
+    {
+
+        $user = new Users();
+        $user->login = $this->login;
+        $user->email = $this->email;
+        $user->password = $this->password;
+        return $user->save(); //вернет true или false
+    }
+
 }
