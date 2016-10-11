@@ -34,4 +34,14 @@ class SiteController extends Controller
         }
         return $this->render('signup',[ 'model' =>$model] );
     }
+
+
+    //1. Проверить существует ли пользователь?
+    //2. "Внести" пользователя в систему(в сессию)
+
+    public function actionLogin()
+    {
+        return $this->render('login');
+    }
+
 }
