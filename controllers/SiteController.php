@@ -16,6 +16,12 @@ class SiteController extends Controller
     public function actionSignup()
     {
         $model = new Signup();
+
+        if(isset($_POST['Signup']))
+        {
+            var_dump($_POST['Signup']; die();)
+
+        }
         return $this->render('signup',[ 'model' =>$model] );
     }
 }
