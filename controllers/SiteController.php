@@ -43,6 +43,13 @@ class SiteController extends Controller
     public function actionLogin()
     {
         $login_model = new Login();
+
+        if( Yii  $app->request->post('Login'))
+        {
+            var_dump(Yii::$app->request->post('Login'));
+            die();
+        }
+
         return $this->render('login',['login_model' =>$login_model]);
     }
 
