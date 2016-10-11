@@ -19,7 +19,7 @@ class SiteController extends Controller
 
         if(isset($_POST['Signup']))
         {
-            var_dump($_POST['Signup']; )die();
+            var_dump($_POST['Signup']); die();
 
         }
         return $this->render('signup',[ 'model' =>$model] );
