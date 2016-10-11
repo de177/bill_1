@@ -2,7 +2,6 @@
 
 namespace app\controllers;
 
-use app\models\Login;
 use Yii;
 use yii\web\Controller;
 use app\models\Signup;
