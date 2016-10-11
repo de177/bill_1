@@ -44,7 +44,7 @@ class SiteController extends Controller
     {
         $login_model = new Login();
 
-        if( Yii  $app->request->post('Login'))
+        if( Yii::$app->request->post('Login'))
         {
             var_dump(Yii::$app->request->post('Login'));
             die();
