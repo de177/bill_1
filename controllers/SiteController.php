@@ -50,8 +50,9 @@ class SiteController extends Controller
 
             if($login_model->validate())
             {
-                Yii::$app->user->login($login_model->getUser());
-                return $this->goHome();
+               // Yii::$app->user->login($login_model->getUser());
+               // return $this->goHome();
+                var_dump('мы прошли валидациюэ'); die();
 
 
             }
