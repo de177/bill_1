@@ -17,8 +17,8 @@ class Signup extends Model
         return [
             [['login','password','email'],'required'],
             ['email','email'],
-            ['login','unique','targetClass'=>'app\models\User'],
-            ['email','unique','targetClass'=>'app\models\User'],
+            ['login','unique','targetClass'=>'app\models\Users'],
+            ['email','unique','targetClass'=>'app\models\Users'],
             ['login','string','min'=>3,'max'=>10],
             ['password','string','min'=>4,'max'=>10]
         ];
