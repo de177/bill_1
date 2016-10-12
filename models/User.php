@@ -3,10 +3,10 @@
 namespace app\models;
 
 use yii\db\ActiveRecord;
-use yii\web\IdentityInterface;
+// use yii\web\IdentityInterface;
 
 
-class Users extends ActiveRecord implements IdentityInterface
+class Users extends ActiveRecord
 {
 
     public function setPassword($password)
@@ -23,6 +23,7 @@ class Users extends ActiveRecord implements IdentityInterface
 
     }
 
+    /*
     //=============================================
     public static function findIdentity($id)
     {
@@ -44,5 +45,5 @@ class Users extends ActiveRecord implements IdentityInterface
     {
 
     }
-
+*/
 }
