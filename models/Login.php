@@ -43,6 +43,6 @@ class Login extends Model
 
     public function getUser()
     {
-        return Users::findOne(['login'=>$this->login]); // а получаем мы его по введенному login
+        return User::findOne(['login'=>$this->login]); // а получаем мы его по введенному login
     }
 }
