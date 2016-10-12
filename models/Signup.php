@@ -26,7 +26,7 @@ class Signup extends Model
 
     public function signup()
     {
-        $user = new Users();
+        $user = new User();
         $user->login = $this->login;
         $user->setPassword($this->password);
         $user->email = $this->email;
