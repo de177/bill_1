@@ -23,7 +23,17 @@ class SiteController extends Controller
 
         if(isset($_POST['Signup']))
         {
-            var_dump($_POST['Signup']); die();
+
+            // $model -> login = $_POST['Signup']['login']; //Вариант получения данных
+
+            $model->attributes = Yii::$app->request->post('Signup');
+            if($model->validate() && $model->signup())
+            {
+                return $this->goHome();
+            }
+
+
+            //var_dump($_POST['Signup']); die();
         }
 
         return $this->render('signup',['model'=>$model]);
