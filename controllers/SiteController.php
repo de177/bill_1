@@ -50,7 +50,14 @@ class SiteController extends Controller
         if(isset($_POST['Login']))
         {
             $login_model->attributes = Yii::$app->request->post('Login');
-            var_dump($_POST['Login']); die();
+
+            if($model->validate())
+            {
+
+            var_dump($_POST['Мы прошли валидацию']); die();
+
+            }
+
 
         }
         return $this->render('login',['login_model' => $login_model]);
