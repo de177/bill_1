@@ -2,6 +2,7 @@
 
 namespace app\models;
 
+use yii\base\Model;
 
 class Login extends Model
 
@@ -13,6 +14,6 @@ class Login extends Model
 
 }
 
-?>
+
 
 
