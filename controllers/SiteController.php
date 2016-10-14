@@ -54,7 +54,7 @@ class SiteController extends Controller
             if($login_model->validate())
             {
 
-            var_dump($_POST['Мы прошли валидацию']); die();
+            var_dump('Мы прошли валидацию'); die();
 
             }
 
