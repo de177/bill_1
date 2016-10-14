@@ -2,7 +2,7 @@
 
 <?php
 
-use yii\windget\ActiveForm;
+use yii\widget\ActiveForm;
 
 ?>
 
