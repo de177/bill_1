@@ -51,7 +51,7 @@ class SiteController extends Controller
         {
             $login_model->attributes = Yii::$app->request->post('Login');
 
-            if($model->validate())
+            if($login_model->validate())
             {
 
             var_dump($_POST['Мы прошли валидацию']); die();
