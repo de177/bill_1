@@ -25,7 +25,7 @@ class Login extends Model
 
         $user = User::findOne(['login'=>$this->login]);
 
-        if(!$user || $user->password != sha1($this->password)))
+        if(!$user || ($user->password != sha1($this->password)))
         {
             //если мы НЕ нашли в базе такого пользователя
             //или введенный пароль и пароль пользователя в базе НЕ равны ТО,
