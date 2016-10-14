@@ -49,7 +49,7 @@ class SiteController extends Controller
 
         if(isset($_POST['Signup']))
         {
-            $model->attributes = Yii::$app->request->post('Login');
+            $login_model->attributes = Yii::$app->request->post('Login');
             var_dump($_POST['Login']); die();
 
         }
