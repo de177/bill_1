@@ -15,6 +15,7 @@ class SiteController extends Controller
     public function actionIndex()
 
     {
+        var_dump(Yii::$app->user->identity);die();
         return $this->render('index');
     }
 
@@ -47,7 +48,7 @@ class SiteController extends Controller
 
         if(!Yii::$app->user->isGuest)
         {
-            var_dump(Yii::$app->user->identity);die();
+
             return $this->goHome();
         }
 
