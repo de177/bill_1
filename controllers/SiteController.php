@@ -45,6 +45,11 @@ class SiteController extends Controller
 
     {
 
+        if(!Yii::$app->user->isGuest)
+        {
+            return $this->goHome();
+        }
+
         $login_model = new Login();
 
         if(isset($_POST['Login']))
