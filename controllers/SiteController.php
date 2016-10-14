@@ -2,10 +2,11 @@
 
 namespace app\controllers;
 
-use app\models\Login;
+
 use Yii;
 use yii\web\Controller;
 use app\models\Signup;
+use app\models\Login;
 
 
 class SiteController extends Controller

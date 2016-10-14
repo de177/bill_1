@@ -3,7 +3,7 @@
 namespace app\models;
 
 
-class Login extends Model
+class Login extends Model;
 
 {
 
@@ -12,3 +12,7 @@ class Login extends Model
 
 
 }
+
+?>
+
+
