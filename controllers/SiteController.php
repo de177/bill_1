@@ -39,4 +39,12 @@ class SiteController extends Controller
         return $this->render('signup',['model'=>$model]);
     }
 
+    public function actionLogin()
+
+    {
+
+        return $this->render('login');
+
+    }
+
 }
