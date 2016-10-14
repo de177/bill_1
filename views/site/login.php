@@ -16,9 +16,12 @@ use yii\widgets\ActiveForm;
 <?= $form->field($login_model,'login')->textInput() ?>
 <?= $form->field($login_model,'password')->passwordInput()?>
 
-<?php
+<div>
 
-$form = ActiveForm::end();
+    <button type="submit" class="btn btn-success">Login</button>
+</div>
 
-?>
+
+
+<?php $form = ActiveForm::end(); ?>
 
