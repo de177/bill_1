@@ -24,7 +24,7 @@ class SiteController extends Controller
         if(!Yii::$app->user->isGuest)
         {
             Yii::$app->user->logout();
-            return $this->redirect(['Login']);
+            return $this->redirect(['login']);
         }
     }
 
