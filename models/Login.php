@@ -15,7 +15,7 @@ class Login extends Model
     {
         return [
             [['login','password'],'required'],
-            ['password', 'validatePassword']
+            ['password', 'validatePassword']  //собственная функция для валидации пароля
 
         ];
     }
@@ -23,17 +23,28 @@ class Login extends Model
     public function validatePassword($attribute,$params)
     {
 
-        $user = User::findOne(['login'=>$this->login]);
+        if(!$this->hasErrors()) {  // если нет ошибок в валидации
 
-        if(!$user || ($user->password != sha1($this->password)))
-        {
-            //если мы НЕ нашли в базе такого пользователя
-            //или введенный пароль и пароль пользователя в базе НЕ равны ТО,
-            $this->addError($attribute,'Пароль или имейл введены неверно');
-            //добавляем новую ошибку для атрибута password о том что пароль или имейл введены не верно
+            $user = $this->getUser();  // получаем пользователя для дальнейшего сравнения пароля
+
+            if (!$user || !$user->validatePassword($this->password)) {
+                //если мы НЕ нашли в базе такого пользователя
+                //или введенный пароль и пароль пользователя в базе НЕ равны ТО,
+                $this->addError($attribute, 'Пароль или логин введены неверно');
+                //добавляем новую ошибку для атрибута password о том что пароль или логин введены не верно
+            }
+
         }
+    }
+
+    public function getUser()
+
+    {
+
+        return User::findOne(['login'=>$this->login]); // а получаем мы его по введенному login
 
     }
+
 
 }
 

@@ -14,4 +14,10 @@ class User extends ActiveRecord
     }
 
 
+    public function validatePassword()
+
+    {
+        return $this->password === sha1(password)
+    }
+
 }
