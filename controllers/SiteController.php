@@ -47,6 +47,12 @@ class SiteController extends Controller
 
         $login_model = new Login();
 
+        if(isset($_POST['Signup']))
+        {
+
+            var_dump($_POST['Login']); die();
+
+        }
         return $this->render('login',['login_model' => $login_model]);
 
     }
