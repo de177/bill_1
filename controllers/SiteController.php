@@ -51,10 +51,10 @@ class SiteController extends Controller
         {
             $login_model->attributes = Yii::$app->request->post('Login');
 
-            if($login_model->validate())
+            if($login_model->validate($login_model->getUser()))
             {
-
-            var_dump('Мы прошли валидацию'); die();
+            return $this->goHome();
+            //var_dump('Мы прошли валидацию'); die();
 
             }
 
