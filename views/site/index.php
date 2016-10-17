@@ -45,7 +45,26 @@ use kartik\daterange\DateRangePicker;
             ]);
     ?>
 
-    <button type="submit" class="btn btn-primary">OK</button>
+</div>
+
+
+<?=  $model_datetime->datetime_start = '2016-02-11'; ?>
+<?=  $model_datetime->datetime_end = '2016-03-15';    ?>
+<div class="input-group drp-container">
+
+<?= DateRangePicker::widget([
+    'model'=>$model_datetime,
+    'attribute' => 'kvdate1',
+    'useWithAddon'=>true,
+    'convertFormat'=>true,
+    'startAttribute' => 'datetime_start',
+    'endAttribute' => 'datetime_end',
+    'pluginOptions'=>[
+    'locale'=>['format' => 'Y-m-d'],
+    ]
+    ]) . $addon;
+?>
+
 </div>
 
 

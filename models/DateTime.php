@@ -12,6 +12,9 @@ class DateTime extends Model
     public $date_range;
     public $startAttribute;
     public $endAttribute;
+    public $datetime_start;
+    public $datetime_end;
+
 
 
 }
