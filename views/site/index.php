@@ -71,5 +71,24 @@ use kartik\daterange\DateRangePicker;
     <button type="submit" class="btn btn-primary">OK-2</button>
 </div>
 
+<h1> ####################################### </h1>
+
+<?=  DateRangePicker::widget([
+'model'=>$model,
+'attribute'=>'datetime_range',
+'convertFormat'=>true,
+'startAttribute'=>'datetime_min',
+'endAttribute'=>'datetime_max',
+'pluginOptions'=>[
+'timePicker'=>true,
+'timePickerIncrement'=>30,
+'locale'=>[
+'format'=>'Y-m-d h:i A'
+]
+]
+]);
+?>
+
+
 
 <?php $form = ActiveForm::end(); ?>
