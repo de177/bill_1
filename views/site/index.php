@@ -12,7 +12,8 @@ use kartik\daterange\DateRangePicker
 <?php $form = ActiveForm::begin(); ?>
 
 
-echo '<label>Start Date/Time</label>';
+<label>Start Date/Time</label>'
+
 <?= DateTimePicker::widget([
         'name' => 'datetime_10',
         'options' => ['placeholder' => 'Select operating time ...'],
@@ -25,21 +26,6 @@ echo '<label>Start Date/Time</label>';
         ]);
 
 ?>
-
-
-
-<label class="control-label">Date Range</label>
-
-<div class="drp-container">
-
-<?= DateRangePicker::widget([
-    'name'=>'date_range_2',
-    'presetDropdown'=>true,
-    'hideInput'=>true
-    ]);
-?>
-
- </div>
 
 
 <?php $form = ActiveForm::end(); ?>
