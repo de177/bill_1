@@ -80,6 +80,7 @@ use kartik\daterange\DateRangePicker;
 'convertFormat'=>true,
 'startAttribute'=>'datetime_start',
 'endAttribute'=>'datetime_end',
+'hideInput'=>true,
 'pluginOptions'=>[
 //'timePicker'=>true,
 //'timePickerIncrement'=>30,
