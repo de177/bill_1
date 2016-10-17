@@ -65,7 +65,7 @@ use kartik\daterange\DateRangePicker;
     ]
     ]);
 ?>
-
+    <button type="submit" class="btn btn-primary">OK-2</button>
 </div>
 
 
