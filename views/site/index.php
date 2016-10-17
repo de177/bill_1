@@ -80,15 +80,18 @@ use kartik\daterange\DateRangePicker;
 'startAttribute'=>'datetime_start',
 'endAttribute'=>'datetime_end',
 'pluginOptions'=>[
-'timePicker'=>true,
-'timePickerIncrement'=>30,
+//'timePicker'=>true,
+//'timePickerIncrement'=>30,
 'locale'=>[
-'format'=>'Y-m-d h:i A'
+'format'=>'Y-m-d'
 ]
 ]
 ]);
 ?>
+<div>
 
+    <button type="submit" class="btn btn-primary">OK-3</button>
+</div>
 
 
 <?php $form = ActiveForm::end(); ?>
