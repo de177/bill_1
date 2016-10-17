@@ -16,15 +16,17 @@ class SiteController extends Controller
 
     {
 
-      /*  if(!Yii::$app->user->isGuest)
+       if(!Yii::$app->user->isGuest)
         {
 
-            return $this->render('login');
+            $date = new DateTime('2000-01-01');
+            echo $date->format('Y-m-d H:i:s');;
+
         }
 
-      */
 
-        var_dump(Yii::$app->user->identity);die();
+
+        // var_dump(Yii::$app->user->identity);die();
         return $this->render('index');
     }
 
