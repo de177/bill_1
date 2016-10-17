@@ -5,23 +5,24 @@
 
 use yii\widgets\ActiveForm;
 use kartik\field\FieldRange;
-use \kartik\datetime\DateTimePicker
+use kartik\datetime\DateTimePicker
 
 ?>
 
 <?php $form = ActiveForm::begin(); ?>
 
-echo 'Event Time';
-<?=
-    DateTimePicker::widget([
-    'name' => 'dp_1',
-    'type' => DateTimePicker::TYPE_INPUT,
-    'value' => '23-Feb-1982 10:10',
-    'pluginOptions' => [
-        'autoclose'=>true,
-        'format' => 'dd-M-yyyy hh:ii'
-    ]
-]);
+
+echo '<label>Start Date/Time</label>';
+<?= DateTimePicker::widget([
+        'name' => 'datetime_10',
+        'options' => ['placeholder' => 'Select operating time ...'],
+        'convertFormat' => true,
+        'pluginOptions' => [
+        'format' => 'd-M-Y g:i A',
+        'startDate' => '01-Mar-2014 12:00 AM',
+        'todayHighlight' => true
+                            ]
+        ]);
 
 ?>
 
