@@ -9,6 +9,7 @@ class DateTime extends Model
 {
     public $startdate;
     public $enddate;
+    public $date_range;
 
 
 }

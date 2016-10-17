@@ -43,7 +43,7 @@ use kartik\daterange\DateRangePicker;
 </div>
 
 
-<?= $form->field($model, 'date_range', [
+<?= $form->field($model_datetime, 'date_range', [
 'addon'=>['prepend'=>['content'=>'<i class="glyphicon glyphicon-calendar"></i>']],
 'options'=>['class'=>'drp-container form-group']
 ])->widget(DateRangePicker::classname(), [
