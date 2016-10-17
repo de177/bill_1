@@ -7,11 +7,8 @@ use yii\widgets\ActiveForm;
 
 ?>
 
-<?php
+<?php $form = ActiveForm::begin(); ?>
 
-    $form = ActiveForm::begin();
-
-?>
 
 <?= $form->field($login_model,'login')->textInput() ?>
 <?= $form->field($login_model,'password')->passwordInput()?>
