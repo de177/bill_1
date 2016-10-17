@@ -14,7 +14,7 @@ class DateTime extends Model
     public $endAttribute;
     public $datetime_start;
     public $datetime_end;
-
+    public $kvdate1;
 
 
 }
