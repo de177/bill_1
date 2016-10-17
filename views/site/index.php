@@ -28,7 +28,7 @@ use kartik\daterange\DateRangePicker;
 
 ?>
 
-<label class="control-label">Date Range</label>
+<label class="control-label">Enter Date Range</label>
 
 <div class="drp-container">
 
@@ -38,7 +38,7 @@ use kartik\daterange\DateRangePicker;
         'hideInput'=>true
     ]);
     ?>
-
+    <button type="submit" class="btn btn-success">ОК</button>
 </div>
 
 

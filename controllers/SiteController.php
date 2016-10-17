@@ -4,10 +4,11 @@ namespace app\controllers;
 
 
 use Yii;
+use yii\base\Model;
 use yii\web\Controller;
 use app\models\Signup;
 use app\models\Login;
-
+use app\models\DateTime;
 
 class SiteController extends Controller
 {
@@ -24,9 +25,11 @@ class SiteController extends Controller
         }
 
 
+        $model_datetime = new DateTime();
+
 
         // var_dump(Yii::$app->user->identity);die();
-        return $this->render('index');
+        return $this->render('index',['model_datetime'=>$model_datetime]);
     }
 
     public function actionLogout()
