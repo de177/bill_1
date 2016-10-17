@@ -26,14 +26,13 @@ echo '<label>Start Date/Time</label>';
 
 ?>
 
-// DateRangePicker in a dropdown format (uneditable/hidden input) and uses the preset dropdown.
 
 
 <label class="control-label">Date Range</label>
 
 <div class="drp-container">
 
-<?=      DateRangePicker::widget([
+<?= DateRangePicker::widget([
     'name'=>'date_range_2',
     'presetDropdown'=>true,
     'hideInput'=>true
