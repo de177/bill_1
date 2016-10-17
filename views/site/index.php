@@ -5,7 +5,8 @@
 
 use yii\widgets\ActiveForm;
 use kartik\field\FieldRange;
-use kartik\datetime\DateTimePicker
+use kartik\datetime\DateTimePicker;
+use kartik\daterange\DateRangePicker;
 
 ?>
 
@@ -26,6 +27,19 @@ use kartik\datetime\DateTimePicker
         ]);
 
 ?>
+
+<label class="control-label">Date Range</label>
+
+<div class="drp-container">
+
+    <?= DateRangePicker::widget([
+        'name'=>'date_range_2',
+        'presetDropdown'=>true,
+        'hideInput'=>true
+    ]);
+    ?>
+
+</div>
 
 
 <?php $form = ActiveForm::end(); ?>
