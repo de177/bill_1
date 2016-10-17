@@ -19,8 +19,7 @@ class SiteController extends Controller
        if(Yii::$app->user->isGuest)
         {
 
-            $date = new DateTime('2000-01-01');
-            echo $date->format('Y-m-d H:i:s');;
+            return $this->redirect(['login']);
 
         }
 
