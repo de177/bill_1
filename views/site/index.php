@@ -21,8 +21,13 @@ use kartik\daterange\DateRangePicker;
                                                     'autoclose' => true
                                                                     ]
 ]);
-
 ?>
+
+<div>
+
+    <button type="submit" class="btn btn-primary">OK-1</button>
+</div>
+
 
 
 
