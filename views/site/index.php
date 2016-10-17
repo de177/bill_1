@@ -56,8 +56,8 @@ use kartik\daterange\DateRangePicker;
 <?= DateRangePicker::widget([
     'model'=>$model_datetime,
     'attribute' => 'kvdate1',
-    'useWithAddon'=>true,
-    'convertFormat'=>true,
+    //'useWithAddon'=>true,
+    //'convertFormat'=>true,
     'startAttribute' => 'datetime_start',
     'endAttribute' => 'datetime_end',
     'pluginOptions'=>[
