@@ -9,7 +9,7 @@ use kartik\date\DatePicker;
 
 ?>
 
-$form = ActiveForm::begin();
+<?php $form = ActiveForm::begin(); ?>
 
 // Simple string/text range validation configured with the Html::dropDownList.
 echo FieldRange::widget([
@@ -104,4 +104,4 @@ echo FieldRange::widget([
 'type' => FieldRange::INPUT_DATETIME,
 ]); ?>
 
-ActiveForm::end();
+<?php $form = ActiveForm::end(); ?>
