@@ -16,7 +16,7 @@ class SiteController extends Controller
 
     {
 
-       if(!Yii::$app->user->isGuest)
+       if(Yii::$app->user->isGuest)
         {
 
             $date = new DateTime('2000-01-01');
