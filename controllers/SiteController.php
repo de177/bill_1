@@ -27,6 +27,13 @@ class SiteController extends Controller
 
         $model_datetime = new DateTime();
 
+        if(isset($_POST['DateTime']))
+        {
+
+            var_dump($_POST['DateTime']); die();
+
+        }
+
 
         // var_dump(Yii::$app->user->identity);die();
         return $this->render('index',['model_datetime'=>$model_datetime]);
