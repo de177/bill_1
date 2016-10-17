@@ -19,7 +19,7 @@ class SiteController extends Controller
         if(!Yii::$app->user->isGuest)
         {
 
-            rreturn $this->redirect(['login']);
+            return $this->redirect(['login']);
         }
 
         var_dump(Yii::$app->user->identity);die();
