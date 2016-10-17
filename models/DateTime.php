@@ -16,5 +16,7 @@ class DateTime extends Model
     public $datetime_end;
     public $kvdate1;
 
+    public $datetime_range;
+
 
 }

@@ -74,11 +74,11 @@ use kartik\daterange\DateRangePicker;
 <h1> ####################################### </h1>
 
 <?=  DateRangePicker::widget([
-'model'=>$model,
+'model'=>$model_datetime,
 'attribute'=>'datetime_range',
 'convertFormat'=>true,
-'startAttribute'=>'datetime_min',
-'endAttribute'=>'datetime_max',
+'startAttribute'=>'datetime_start',
+'endAttribute'=>'datetime_end',
 'pluginOptions'=>[
 'timePicker'=>true,
 'timePickerIncrement'=>30,
