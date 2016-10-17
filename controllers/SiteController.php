@@ -26,6 +26,7 @@ class SiteController extends Controller
 
 
         $model_datetime = new DateTime();
+        $kvdate1 = 'Введите диапазон дат';
 
         if(isset($_POST['DateTime']))
         {
