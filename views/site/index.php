@@ -6,7 +6,7 @@
 use yii\widgets\ActiveForm;
 use kartik\field\FieldRange;
 use kartik\datetime\DateTimePicker
-use kartik\daterange\DateRangePicker
+
 ?>
 
 <?php $form = ActiveForm::begin(); ?>
