@@ -76,6 +76,7 @@ use kartik\daterange\DateRangePicker;
 <?=  DateRangePicker::widget([
 'model'=>$model_datetime,
 'attribute'=>'datetime_range',
+'presetDropdown'=>true,
 'convertFormat'=>true,
 'startAttribute'=>'datetime_start',
 'endAttribute'=>'datetime_end',
