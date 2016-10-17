@@ -3,6 +3,7 @@
 
 <?php
 
+use yii\bootstrap\Modal;
 use yii\widgets\ActiveForm;
 use kartik\field\FieldRange;
 use kartik\datetime\DateTimePicker;
@@ -12,6 +13,16 @@ use kartik\daterange\DateRangePicker;
 
 <?php $form = ActiveForm::begin(); ?>
 
+// Usage with model and Active Form (with no default initial value)
+
+<?= $form->field($model_datetime, 'datetime_1')->widget(DateTimePicker::classname(), [
+                                                'options' => ['placeholder' => 'Enter event time ...'],
+                                                'pluginOptions' => [
+                                                    'autoclose' => true
+                                                                    ]
+]);
+
+?>
 
 
 
