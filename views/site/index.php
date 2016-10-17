@@ -15,7 +15,7 @@ use kartik\daterange\DateRangePicker;
 
 // Usage with model and Active Form (with no default initial value)
 
-<?= $form->field($model_datetime, 'datetime_1')->widget(DateTimePicker::classname(), [
+<?= $form->field($model_datetime, 'startdate')->widget(DateTimePicker::classname(), [
                                                 'options' => ['placeholder' => 'Enter event time ...'],
                                                 'pluginOptions' => [
                                                     'autoclose' => true
