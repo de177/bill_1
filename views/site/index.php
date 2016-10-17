@@ -33,9 +33,15 @@ use kartik\daterange\DateRangePicker;
 <div class="drp-container">
 
     <?= DateRangePicker::widget([
+        'model_datetime'=>$model_datetime,
+        'attribute' => 'kvdate1',
         'name'=>'date_range_2',
         'presetDropdown'=>true,
-        'hideInput'=>true
+        'hideInput'=>true,
+        'pluginOptions'=>[
+            'locale'=>['format' => 'd-m-Y'],
+        ]
+
     ]);
     ?>
     <button type="submit" class="btn btn-primary">OK</button>
