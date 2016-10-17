@@ -2,18 +2,16 @@
 
 
 <?php
-use yii\bootstrap\DatePicker;
+use kartik\date\DatePicker;
 ?>
 
 
-<?= DatePicker::widget([
-    'model' => $model,
-    'attribute' => 'from_date',
-    'language' => 'ru',
-    'clientOptions' => [
-        'dateFormat' => 'yy-mm-dd',
-    ],
-])
+<?= echo $form->field($model, 'date_1')->widget(DatePicker::classname(), [
+    'options' => ['placeholder' => 'Enter birth date ...'],
+    'pluginOptions' => [
+        'autoclose'=>true
+    ]
+]);
 
 ?>
 
