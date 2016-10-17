@@ -38,6 +38,8 @@ use kartik\daterange\DateRangePicker;
     <?= DateRangePicker::widget([
         'name'=>'date_range_2',
         'presetDropdown'=>true,
+        'startAttribute' => 'from_date',
+        'endAttribute' => 'to_date',
         'hideInput'=>true
             ]);
     ?>
