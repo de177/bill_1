@@ -38,7 +38,7 @@ use kartik\daterange\DateRangePicker;
         'hideInput'=>true
     ]);
     ?>
-    <button type="submit" class="btn btn-success">ОК</button>
+    <button type="submit" class="btn btn-primary">OK</button>
 </div>
 
 
