@@ -62,7 +62,7 @@ use kartik\daterange\DateRangePicker;
     'pluginOptions'=>[
     'locale'=>['format' => 'Y-m-d'],
     ]
-    ]) . $addon;
+    ]);
 ?>
 
 </div>
