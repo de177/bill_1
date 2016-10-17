@@ -57,12 +57,15 @@ use kartik\daterange\DateRangePicker;
     'model'=>$model_datetime,
     'attribute' => 'kvdate1',
     //'useWithAddon'=>true,
+    'presetDropdown'=>true,
     'convertFormat'=>true,
     'startAttribute' => 'datetime_start',
     'endAttribute' => 'datetime_end',
+    'hideInput'=>true,
     'pluginOptions'=>[
-    'locale'=>['format' => 'Y-m-d'],
-    ]
+
+                'locale'=>['format' => 'Y-m-d'],
+                    ]
     ]);
 ?>
     <button type="submit" class="btn btn-primary">OK-2</button>
