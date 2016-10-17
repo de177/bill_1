@@ -36,10 +36,9 @@ use kartik\daterange\DateRangePicker;
         'name'=>'date_range_2',
         'presetDropdown'=>true,
         'hideInput'=>true
-        ]
-
-    ]);
+            ]);
     ?>
+
     <button type="submit" class="btn btn-primary">OK</button>
 </div>
 
