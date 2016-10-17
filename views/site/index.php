@@ -15,6 +15,7 @@ use kartik\daterange\DateRangePicker;
 
 // Usage with model and Active Form (with no default initial value)
 
+
 <?= $form->field($model_datetime, 'startdate')->widget(DateTimePicker::classname(), [
                                                 'options' => ['placeholder' => 'Enter event time ...'],
                                                 'pluginOptions' => [
@@ -38,8 +39,8 @@ use kartik\daterange\DateRangePicker;
     <?= DateRangePicker::widget([
         'name'=>'date_range_2',
         'presetDropdown'=>true,
-        'startAttribute' => 'from_date',
-        'endAttribute' => 'to_date',
+        //'startAttribute' => 'from_date',
+        //'endAttribute' => 'to_date',
         'hideInput'=>true
             ]);
     ?>
