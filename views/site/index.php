@@ -38,7 +38,7 @@ use yii\helpers\Url;
 
 <?php
 
-SideNav::widget([
+     echo SideNav::widget([
     'type' => SideNav::TYPE_DEFAULT,
     'heading' => 'Options',
     'items' => [
