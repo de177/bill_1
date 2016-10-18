@@ -42,11 +42,7 @@ SideNav::widget([
     'type' => SideNav::TYPE_DEFAULT,
     'heading' => 'Options',
     'items' => [
-        [
-            'url' => '#',
-            'label' => 'Home',
-            'icon' => 'home'
-        ],
+        ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home', 'type'=>$type]), 'active' => ($item == 'home')],
         [
             'label' => 'Help',
             'icon' => 'question-sign',
