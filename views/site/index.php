@@ -30,13 +30,15 @@ use yii\bootstrap\NavBar;
 
 
 
-<?= NavBar::begin([
-'brandLabel' => 'Yii Navbar',
-'brandUrl' => Yii::$app->homeUrl,
-'options' => [
-'class' => 'navbar-default'
-],
-]);
+<?php
+
+    NavBar::begin([
+        'brandLabel' => 'Yii Navbar',
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+        'class' => 'navbar-default'
+                    ],
+    ]);
 
     Nav::widget([
     'options' => [
