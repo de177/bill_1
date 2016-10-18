@@ -35,10 +35,10 @@ use yii\bootstrap\NavBar;
 'brandUrl' => Yii::$app->homeUrl,
 'options' => [
 'class' => 'navbar-default'
-]
+],
 ]);
 
-    echo Nav::widget([
+    Nav::widget([
     'options' => [
         'class' => 'navbar-nav navbar-right'
     ],
@@ -75,7 +75,7 @@ use yii\bootstrap\NavBar;
                 'data-method' => 'post'
             ]
         ]
-    ]
+    ],
 ]);
 NavBar::end();
 ?>
