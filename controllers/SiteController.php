@@ -25,8 +25,21 @@ class SiteController extends Controller
         }
 
 
+        // var_dump(Yii::$app->user->identity);die();
+        return $this->render('index');
+    }
+
+    public function actionDatetime()
+    {
+
+        if(Yii::$app->user->isGuest)
+        {
+
+            return $this->redirect(['login']);
+
+        }
+
         $model_datetime = new DateTime();
-        $kvdate1 = 'Введите диапазон дат';
 
         if(isset($_POST['DateTime']))
         {
@@ -38,6 +51,7 @@ class SiteController extends Controller
 
         // var_dump(Yii::$app->user->identity);die();
         return $this->render('index',['model_datetime'=>$model_datetime]);
+
     }
 
     public function actionLogout()
