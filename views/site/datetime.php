@@ -71,6 +71,10 @@ use kartik\daterange\DateRangePicker;
 
     <h1> ####################################### </h1>
 
+
+<div class="input-group drp-container">
+    <input type="text" class="form-control" id="" style="width:250px">
+
 <?=  DateRangePicker::widget([
     'model'=>$model_datetime,
     'attribute'=>'datetime_range',
@@ -88,7 +92,6 @@ use kartik\daterange\DateRangePicker;
     ]
 ]);
 ?>
-    <div>
 
         <button type="submit" class="btn btn-primary">OK-3</button>
     </div>
