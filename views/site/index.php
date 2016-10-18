@@ -40,7 +40,7 @@ use yii\helpers\Url;
 
      echo SideNav::widget([
     'type' => SideNav::TYPE_SUCCESS,
-    heading' => '<i class="glyphicon glyphicon-cog"></i> 'Operations']);
+    'heading' => '<i class="glyphicon glyphicon-cog"></i> Operations']);
     'items' => [
     ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home'])],
 
