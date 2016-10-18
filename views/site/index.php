@@ -42,9 +42,9 @@ SideNav::widget([
     'type' => SideNav::TYPE_DEFAULT,
     'heading' => 'Options',
     'items' => [
-    ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home']), 'active' => ($item == 'home')],
+    ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home'])],
 
-    ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile']), 'active' => ($item == 'profile')],
+    ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile'])],
 ],
 ]);
 ?>
