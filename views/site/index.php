@@ -44,7 +44,7 @@ use yii\helpers\Url;
     'items' => [
     ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home'])],
 
-    ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile'])],
+    ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile']),'active' => ($item == 'profile')],
 ],
 ]);
 ?>
