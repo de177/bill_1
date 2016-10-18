@@ -39,9 +39,9 @@ use yii\helpers\Url;
 <?php
 
      SideNav::widget([
-    'type' => success,
+    'type' => SideNav::TYPE_SUCCESS,
     'encodeLabels' => false,
-    'heading' => Operations,
+    'heading' => 'Options',
     'items' => [
         // Important: you need to specify url as 'controller/action',
         // not just as 'controller' even if default action is used.
