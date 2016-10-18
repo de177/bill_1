@@ -44,7 +44,10 @@ use yii\helpers\Url;
     'items' => [
     ['label' => 'Управление клиентами', 'icon' => 'user', 'url' => Url::to(['/site/clients'])],
 
-    ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile'])],
+    ['label' => 'Управление тарифами', 'icon' => 'cloud', 'items' => [
+        ['label' => 'Создать', 'url' => Url::to(['/site/online-1')],
+        ['label' => 'Список', 'url' => Url::to(['/site/online-2')]
+    ]],
 ],
 ]);
 ?>
