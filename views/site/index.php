@@ -19,6 +19,10 @@ use yii\widgets\Menu;
     ]],
     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
     ],
+
+    'options' => ['tag' => 'div', 'class' => 'list-group'], // обертка вместо <ul>
+    'itemOptions' => ['tag'=> 'a', 'class'=> 'list-group-item'],
+    'linkTemplate' => '{label}'
 ]);
 
 ?>
