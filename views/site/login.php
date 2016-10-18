@@ -10,8 +10,8 @@ use yii\widgets\ActiveForm;
 <?php $form = ActiveForm::begin(); ?>
 
 
-<?= $form->field($login_model,'login')->textInput() ?>
-<?= $form->field($login_model,'password')->passwordInput()?>
+<?= $form->field($login_model,'login')->textInput(['maxlength' => 30]) ?>
+<?= $form->field($login_model,'password')->passwordInput(['maxlength' => 30])?>
 
 <div>
 
