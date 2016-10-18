@@ -42,7 +42,7 @@ use yii\helpers\Url;
     'type' => SideNav::TYPE_SUCCESS,
     'heading' => '<i class="glyphicon glyphicon-cog"></i> Operations',
     'items' => [
-    ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home'])],
+    ['label' => 'Управление клиентами', 'icon' => 'user', 'url' => Url::to(['/site/clients'])],
 
     ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile'])],
 ],
