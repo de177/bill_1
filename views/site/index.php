@@ -38,7 +38,7 @@ use yii\helpers\Url;
 
 <?php
 
-echo SideNav::widget([
+     SideNav::widget([
     'type' => $type,
     'encodeLabels' => false,
     'heading' => $heading,
