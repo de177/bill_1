@@ -73,7 +73,7 @@ use kartik\daterange\DateRangePicker;
 
 
 <div class="input-group drp-container">
-    <input type="text" class="form-control" id="" style="width:250px">
+
 
 <?=  DateRangePicker::widget([
     'model'=>$model_datetime,
