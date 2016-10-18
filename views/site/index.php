@@ -38,31 +38,23 @@ use yii\helpers\Url;
 
 <?php
 
-     SideNav::widget([
-    'type' => SideNav::TYPE_SUCCESS,
-    'encodeLabels' => false,
-    'heading' => '<i class="glyphicon glyphicon-cog"></i> Operations',
+SideNav::widget([
+    'type' => SideNav::TYPE_DEFAULT,
+    'heading' => 'Options',
     'items' => [
-        // Important: you need to specify url as 'controller/action',
-        // not just as 'controller' even if default action is used.
-        ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'home')],
-        ['label' => 'Books', 'icon' => 'book', 'items' => [
-            ['label' => '<span class="pull-right badge">10</span> New Arrivals', 'url' => Url::to(['/site/new-arrivals', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'new-arrivals')],
-            ['label' => '<span class="pull-right badge">5</span> Most Popular', 'url' => Url::to(['/site/most-popular', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'most-popular')],
-            ['label' => 'Read Online', 'icon' => 'cloud', 'items' => [
-                ['label' => 'Online 1', 'url' => Url::to(['/site/online-1', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'online-1')],
-                ['label' => 'Online 2', 'url' => Url::to(['/site/online-2', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'online-2')]
-            ]],
-        ]],
-        ['label' => '<span class="pull-right badge">3</span> Categories', 'icon' => 'tags', 'items' => [
-            ['label' => 'Fiction', 'url' => Url::to(['/site/fiction', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'fiction')],
-            ['label' => 'Historical', 'url' => Url::to(['/site/historical', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'historical')],
-            ['label' => '<span class="pull-right badge">2</span> Announcements', 'icon' => 'bullhorn', 'items' => [
-                ['label' => 'Event 1', 'url' => Url::to(['/site/event-1', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'event-1')],
-                ['label' => 'Event 2', 'url' => Url::to(['/site/event-2', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'event-2')]
-            ]],
-        ]],
-        ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile', 'type'=>SideNav::TYPE_SUCCESS]), 'active' => ($item == 'profile')],
+        [
+            'url' => '#',
+            'label' => 'Home',
+            'icon' => 'home'
+        ],
+        [
+            'label' => 'Help',
+            'icon' => 'question-sign',
+            'items' => [
+                ['label' => 'About', 'icon'=>'info-sign', 'url'=>'#'],
+                ['label' => 'Contact', 'icon'=>'phone', 'url'=>'#'],
+            ],
+        ],
     ],
 ]);
 ?>
