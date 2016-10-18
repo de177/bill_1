@@ -39,12 +39,12 @@ use yii\helpers\Url;
 <?php
 
      echo SideNav::widget([
-    'type' => SideNav::TYPE_DEFAULT,
-    'heading' => 'Options',
+    'type' => SideNav::TYPE_SUCCESS,
+    heading' => '<i class="glyphicon glyphicon-cog"></i> 'Operations']);
     'items' => [
     ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home'])],
 
-    ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile']),'active' => ($item == 'profile')],
+    ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile'])],
 ],
 ]);
 ?>
