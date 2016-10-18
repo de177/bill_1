@@ -1,7 +1,8 @@
 <?php
 
 use yii\widgets\Menu;
-
+use yii\bootstrap\Nav;
+use yii\bootstrap\Navbar;
 ?>
 
 <h1> Мы на главной странице</h1>
@@ -27,4 +28,15 @@ use yii\widgets\Menu;
 
 ?>
 
+
+
+<?= NavBar::begin([
+'brandLabel' => 'Yii Navbar',
+'brandUrl' => Yii::$app->homeUrl,
+'options' => [
+'class' => 'navbar-default'
+]
+]);
+
+?>
 
