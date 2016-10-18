@@ -69,7 +69,7 @@ use yii\bootstrap\NavBar;
                 '#'
             ]
         ] : [
-            'label' => 'Выйти ('.Yii::$app->user->identity->username.')',
+            'label' => 'Выйти ('.Yii::$app->user->identity->login.')',
             'url' => [
                 '#'
             ],
