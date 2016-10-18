@@ -2,7 +2,7 @@
 
 use yii\widgets\Menu;
 use yii\bootstrap\Nav;
-use yii\bootstrap\Navbar;
+use yii\bootstrap\NavBar;
 ?>
 
 <h1> Мы на главной странице</h1>
