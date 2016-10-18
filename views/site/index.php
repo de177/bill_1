@@ -42,16 +42,10 @@ SideNav::widget([
     'type' => SideNav::TYPE_DEFAULT,
     'heading' => 'Options',
     'items' => [
-        ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home'), 'active' => ($item == 'home')]),
-        [
-            'label' => 'Help',
-            'icon' => 'question-sign',
-            'items' => [
-                ['label' => 'About1', 'icon'=>'info-sign', 'url'=>'#'],
-                ['label' => 'Contact1', 'icon'=>'phone', 'url'=>'#'],
-            ],
-        ],
-    ],
+    ['label' => 'Home', 'icon' => 'home', 'url' => Url::to(['/site/home']), 'active' => ($item == 'home')],
+
+    ['label' => 'Profile', 'icon' => 'user', 'url' => Url::to(['/site/profile']), 'active' => ($item == 'profile')],
+],
 ]);
 ?>
 
