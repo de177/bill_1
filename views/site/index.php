@@ -38,5 +38,45 @@ use yii\bootstrap\NavBar;
 ]
 ]);
 
+    echo Nav::widget([
+    'options' => [
+        'class' => 'navbar-nav navbar-right'
+    ],
+    'items' => [
+        [
+            'label' => 'Главная',
+            'url' => [
+                '#'
+            ]
+        ],
+        [
+            'label' => 'About',
+            'url' => [
+                '#'
+            ]
+        ],
+        [
+            'label' => 'Обратная связь',
+            'url' => [
+                '#'
+            ]
+        ],
+        Yii::$app->user->isGuest ? [
+            'label' => 'Войти',
+            'url' => [
+                '#'
+            ]
+        ] : [
+            'label' => 'Выйти ('.Yii::$app->user->identity->username.')',
+            'url' => [
+                '#'
+            ],
+            'linkOptions' => [
+                'data-method' => 'post'
+            ]
+        ]
+    ]
+]);
+NavBar::end();
 ?>
 
