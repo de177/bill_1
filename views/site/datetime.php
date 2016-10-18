@@ -1,6 +1,5 @@
 <?php
 
-<?php
 
 use yii\bootstrap\Modal;
 use yii\widgets\ActiveForm;
