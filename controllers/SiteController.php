@@ -50,7 +50,7 @@ class SiteController extends Controller
 
 
         // var_dump(Yii::$app->user->identity);die();
-        return $this->render('index',['model_datetime'=>$model_datetime]);
+        return $this->render('datetime',['model_datetime'=>$model_datetime]);
 
     }
 
