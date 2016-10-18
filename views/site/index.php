@@ -8,7 +8,7 @@ use yii\bootstrap\NavBar;
 <h1> Мы на главной странице</h1>
 
 
-<?= Menu::widget([
+<?= /*Menu::widget([
     'items' => [
 // Important: you need to specify url as 'controller/action',
 // not just as 'controller' even if default action is used.
@@ -26,6 +26,8 @@ use yii\bootstrap\NavBar;
     'linkTemplate' => '{label}'
 ]);
 
+*/
+
 ?>
 
 
@@ -40,7 +42,7 @@ use yii\bootstrap\NavBar;
                     ],
     ]);
 
-    Nav::widget([
+    echo Nav::widget([
     'options' => [
         'class' => 'navbar-nav navbar-right'
     ],
