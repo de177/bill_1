@@ -45,7 +45,7 @@ AppAsset::register($this);
                     </div>
                     <div class="profile_info">
                         <span>Welcome,</span>
-                        <h2><?php 'Logout (' . Yii::$app->user->identity->login . ')' ?> </h2>
+                        <h2><?php Yii::$app->user->identity->login ?> </h2>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
