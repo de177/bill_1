@@ -35,6 +35,10 @@ AppAsset::register($this);
                     <a href="/" class="GTEL Admin Interface"><i class="fa fa-paw"></i> <span>Gorizont-Telecom</span></a>
                 </div>
 
+                <div class="clearfix"></div>
+
+                <!-- menu prile quick info -->
+
 
 <div id="navBar" class="col-sm-12">
     <?php $this->beginContent('@app/views/layouts/left_sidebar.php'); ?>
