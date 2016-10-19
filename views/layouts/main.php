@@ -40,9 +40,7 @@ AppAsset::register($this);
                 <!-- menu profile quick info -->
 
                 <div class="profile">
-                    <div class="profile_pic">
-                        <img src="http://placehold.it/128x128" alt="..." class="img-circle profile_img">
-                    </div>
+
                     <div class="profile_info">
 
                         <span>Welcome, <?= Yii::$app->user->identity->login ?></span>
