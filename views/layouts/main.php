@@ -22,7 +22,19 @@ AppAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body class="nav-md">
-<?php $this->beginBody() ?>
+    <?php $this->beginBody() ?>
+
+    <div class="container body">
+
+        <div class="col-md-3 left_col">
+
+            <div class="left_col scroll-view">
+
+                <div class="navbar nav_title" style="border: 0;">
+
+                    <a href="/" class="GTEL Admin Interface"><i class="fa fa-paw"></i> <span>Gorizont-Telecom</span></a>
+                </div>
+
 
 <div id="navBar" class="col-sm-12">
     <?php $this->beginContent('@app/views/layouts/left_sidebar.php'); ?>
