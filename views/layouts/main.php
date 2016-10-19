@@ -50,14 +50,22 @@ AppAsset::register($this);
                 </div>
                 <!-- /menu profile quick info -->
 
+                <br />
+
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+                    <div class="menu_section">
+                        <h3>General</h3>
+
+                        <?php $this->beginContent('@app/views/layouts/left_sidebar.php'); ?>
+
+                        <?php $this->endContent(); ?>
+                    </div>
+                 </div>
+                <!-- /sidebar menu -->
 
 
-
-<div id="navBar" class="col-sm-2">
-    <?php $this->beginContent('@app/views/layouts/left_sidebar.php'); ?>
-
-    <?php $this->endContent(); ?>
-</div>
 
 <div class="wrap">
     <?php
