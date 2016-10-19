@@ -24,7 +24,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div id="navBar" class="col-sm-2">
+<div id="navBar" class="col-sm-12">
     <?php $this->beginContent('@app/views/layouts/left_sidebar.php'); ?>
 
     <?php $this->endContent(); ?>
