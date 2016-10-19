@@ -21,7 +21,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body class="nav-md">
 <?php $this->beginBody() ?>
 
 <div id="navBar" class="col-sm-12">
@@ -69,6 +69,9 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 </div>
+
+
+
 
 <footer class="footer">
     <div class="container">
