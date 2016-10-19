@@ -107,21 +107,6 @@ AppAsset::register($this);
 
 
 
-        <!-- page content -->
-
-        <div class="right_col" role="main">
-
-            <div class="clearfix"></div>
-            <?= $content ?>
-        </div>
-        <!-- /page content -->
-
-    </div>
-
-
-
-    <!--
-
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
@@ -130,7 +115,6 @@ AppAsset::register($this);
     </div>
 </div>
 
---->
 
 
 
