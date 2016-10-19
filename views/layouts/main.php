@@ -105,7 +105,7 @@ AppAsset::register($this);
 
         <!-- page content -->
 
-        <div class="container">
+        <div class="jumbotron">
         <?= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],]) ?>
             <?= $content ?>
         </div>
