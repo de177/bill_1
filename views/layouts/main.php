@@ -45,7 +45,7 @@ AppAsset::register($this);
                     </div>
                     <div class="profile_info">
                         <span>Welcome,</span>
-                        <h2><?php Yii::$app->user->identity->login, Yii::powered()?> </h2>
+                        <h2><?php Yii::$app->user->identity->login?> <?php Yii::powered()?> </h2>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
