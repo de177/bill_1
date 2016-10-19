@@ -43,7 +43,7 @@ AppAsset::register($this);
 
                     <div class="profile_info">
 
-                        <span>Welcome, <?= Yii::$app->user->identity->login ?></span>
+                        <span>Добро пожаловать, <?= Yii::$app->user->identity->login ?></span>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
