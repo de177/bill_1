@@ -103,15 +103,16 @@ AppAsset::register($this);
 
         <!-- /top navigation -->
 
+        <!-- page content -->
 
+        <div class="container">
+        <?= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],]) ?>
+            <?= $content ?>
+        </div>
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
+        <!-- /page content -->
+
     </div>
-</div>
 
 
 
