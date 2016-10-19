@@ -43,7 +43,7 @@ AppAsset::register($this);
 
                     <div class="profile_info">
 
-                        <span>Добро пожаловать, <?= Yii::$app->user->identity->login ?></span>
+                        <span>Добро пожаловать !</span>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
@@ -106,7 +106,9 @@ AppAsset::register($this);
         <!-- page content -->
 
         <div class="context">
-        <?= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],]) ?>
+
+            <?= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],]) ?>
+
             <?= $content ?>
         </div>
 

@@ -20,6 +20,7 @@ echo SideNav::widget([
             ['label' => 'Создать', 'url' => Url::to(['/site/online-1'])],
             ['label' => 'Список', 'url' => Url::to(['/site/online-2'])]
         ]],
+
     ],
 ]);
 ?>
