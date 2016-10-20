@@ -8,7 +8,7 @@ body {
     height: 100%;
     margin: 0 auto;
     position:relative;
-    min-width: 800px;
+    min-width: 850px;
     width:80%;
 }
 
@@ -146,7 +146,7 @@ a.desc:after {
 
 #center {
     background:#FFFFEC;
-    width:65%;
+    width:69%;
     float:right;
     padding:10px;
 }
