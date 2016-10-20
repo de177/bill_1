@@ -49,7 +49,17 @@ AppAsset::register($this);
 
                         </div>
 
-                        <div id="left">Левая колонка</div>
+                        <!-- left sidebar menu -->
+
+                        <div id="left">Левая колонка
+
+                            <?php $this->beginContent('@app/views/layouts/left_sidebar.php'); ?>
+
+                            <?php $this->endContent(); ?>
+
+                        </div>
+
+                        <!-- / left sidebar menu -->
 
                     </div>
                 </div>
@@ -65,9 +75,9 @@ AppAsset::register($this);
 
 
 
-                <!-- sidebar menu -->
 
-                <!-- /sidebar menu -->
+
+
 
 
         <!-- top navigation -->
