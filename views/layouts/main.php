@@ -24,9 +24,19 @@ AppAsset::register($this);
 <body>
     <?php $this->beginBody() ?>
 
-    <div id="header">Заголовок страницы</div>
+    <!-- top navigation -->
 
-            <div id="content">
+    <div id="header">Заголовок страницы
+
+        <?php $this->beginContent('@app/views/layouts/top_sidebar.php'); ?>
+
+        <?php $this->endContent(); ?>
+
+    </div>
+
+    <!-- /top navigation -->
+
+    <div id="content">
 
                 <div id="container1">
 
@@ -80,11 +90,11 @@ AppAsset::register($this);
 
 
 
-        <!-- top navigation -->
 
 
 
-        <!-- /top navigation -->
+
+
 
 
 
