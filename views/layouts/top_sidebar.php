@@ -13,7 +13,7 @@ NavBar::begin([
     'brandLabel' => 'My Company',
     'brandUrl' => Yii::$app->homeUrl,
     'options' => [
-        'class' => 'my-navbar',
+        'class' => 'my-navbar navbar-fixed-top',
 
     ],
 ]);
