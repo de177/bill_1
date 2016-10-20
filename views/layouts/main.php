@@ -46,7 +46,7 @@ AppAsset::register($this);
 
                             <!-- page content -->
 
-                            <div id="center">Центральная колонка
+                            <div id="center">
 
                                 <?= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],]) ?>
 
@@ -61,7 +61,7 @@ AppAsset::register($this);
 
                         <!-- left sidebar menu -->
 
-                        <div id="left">Левая колонка
+                        <div id="left">
 
                             <?php $this->beginContent('@app/views/layouts/left_sidebar.php'); ?>
 
