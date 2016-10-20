@@ -24,6 +24,27 @@ AppAsset::register($this);
 <body>
     <?php $this->beginBody() ?>
 
+    <div id="header">Заголовок страницы</div>
+
+            <div id="content">
+
+                <div id="container1">
+
+                    <div id="container2">
+
+                        <div id="container3">
+
+                            <div id="center">Центральная колонка</div>
+
+                        </div>
+
+                        <div id="left">Левая колонка</div>
+
+                    </div>
+                </div>
+            </div>
+
+    <div id="footer">Копирайт</div>
 
 
                 <!-- menu profile quick info -->
