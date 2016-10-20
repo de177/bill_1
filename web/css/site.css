@@ -8,7 +8,7 @@ body {
     height: 100%;
     margin: 0 auto;
     position:relative;
-    min-width: 60%;
+    min-width: 1000px;
     width:80%;
 }
 
@@ -127,7 +127,7 @@ a.desc:after {
 
 #content {
     padding-bottom:60px;
-    width:expression(document.body.clientWidth > 800 ? "100%" : "850px");
+    width:expression(document.body.clientWidth > 850 ? "100%" : "850px");
     overflow:hidden;
 }
 
