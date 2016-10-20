@@ -1,6 +1,9 @@
 html,
 body {
     height: 100%;
+    margin: 0 auto;
+    position:relative;
+    width:700px;
 }
 
 .wrap {
@@ -107,7 +110,7 @@ a.desc:after {
 
 #content {
     padding-bottom:60px;
-    width:expression(document.body.clientWidth < 782? "780px" : document.body.clientWidth > 1262? "1260px" : "auto");
+    width:expression(document.body.clientWidth > 800 ? "100%" : "800px");
     overflow:hidden;
 }
 
