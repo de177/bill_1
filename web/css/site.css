@@ -139,14 +139,14 @@ a.desc:after {
 
 #left {
     background:#EDFFEC;
-    width:28%;
+    width:30%;
     float:left;
     padding:10px;
 }
 
 #center {
     background:#FFFFEC;
-    width:69%;
+    width:70%;
     float:right;
     padding:10px;
 }
