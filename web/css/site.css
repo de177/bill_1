@@ -1,4 +1,9 @@
-html,
+html {
+
+    background-color: #F2F2F2;
+
+    }
+
 body {
     height: 100%;
     margin: 0 auto;
