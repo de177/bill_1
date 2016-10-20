@@ -44,7 +44,7 @@ AppAsset::register($this);
                 </div>
             </div>
 
-    <div id="footer">Копирайт</div>
+
 
 
                 <!-- menu profile quick info -->
@@ -72,11 +72,9 @@ AppAsset::register($this);
         <!-- /page content -->
 
 
-
-
-
 <footer class="footer">
-    <div class="container">
+    <div id="footer">Копирайт,
+
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
