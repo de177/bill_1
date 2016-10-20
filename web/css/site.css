@@ -108,6 +108,14 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
+/* Top navbar style */
+
+.my-navbar {
+    background-color: #D8F781;
+            }
+
+/* html style */
+
 #header {
     background:#C4E9FC;
     height:70px;
