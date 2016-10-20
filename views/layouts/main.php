@@ -34,7 +34,18 @@ AppAsset::register($this);
 
                         <div id="container3">
 
-                            <div id="center">Центральная колонка</div>
+                            <!-- page content -->
+
+                            <div id="center">Центральная колонка
+
+                                <?= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],]) ?>
+
+                                <?= $content ?>
+
+
+                            </div>
+
+                            <!-- /page content -->
 
                         </div>
 
@@ -65,11 +76,11 @@ AppAsset::register($this);
 
         <!-- /top navigation -->
 
-        <!-- page content -->
 
 
 
-        <!-- /page content -->
+
+
 
 
     <!-- footer content -->
