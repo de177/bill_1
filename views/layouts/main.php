@@ -73,11 +73,8 @@ AppAsset::register($this);
 
 
 <footer class="footer">
-    <div id="footer">Копирайт,
-
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+    <div id="footer">
+        <p class="pull-left" style="text-align: right;">&copy; Copyright My Company <?= date('Y') ?>
     </div>
 </footer>
 
