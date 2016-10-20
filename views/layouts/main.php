@@ -63,9 +63,14 @@ AppAsset::register($this);
 
                         <div id="left">
 
-                            <?php $this->beginContent('@app/views/layouts/left_sidebar.php'); ?>
+                            <?php if(!Yii::$app->user->isGuest)
 
-                            <?php $this->endContent(); ?>
+
+
+                                    $this->beginContent('@app/views/layouts/left_sidebar.php');
+                                    $this->endContent();
+
+                            ?>
 
                         </div>
 
