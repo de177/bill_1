@@ -99,51 +99,51 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
-.header {
+#header {
     background:#9393FF;
     height:70px;
     width:100%;
 }
 
-.content {
+#content {
     padding-bottom:60px;
     width:expression(document.body.clientWidth>800?"100%":"800px");
     overflow:hidden;
 }
 
-.container1 {
+#container1 {
     width:100%;
     float:left;
     margin-right:-180px;
 }
 
-.container2 {
+#container2 {
     background:#000;
     margin-right:0;
 }
 
-.container3 {
+#container3 {
     width:100%;
     float:right;
     margin-left:-200px;
 }
 
-.left {
+#left {
     background:#AEAE00;
     width:200px;
     float:left;
 }
 
-.center {
+#center {
     background:#D86927;
     margin-left:200px;
 }
 
-.min_width {
+#min_width {
     width:800px;
 }
 
-.footer {
+#footer {
     position:absolute;
     bottom:0;
     background:#8F9EB1;
