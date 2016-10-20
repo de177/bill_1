@@ -73,7 +73,7 @@ AppAsset::register($this);
 
                                 else {
 
-                                    return "False ";
+
                                 }
 
                             ?>
