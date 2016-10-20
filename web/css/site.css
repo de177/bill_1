@@ -100,7 +100,7 @@ a.desc:after {
 }
 
 #header {
-    background:#9393FF;
+    background:#C4E9FC;
     height:70px;
     width:100%;
 }
@@ -129,13 +129,13 @@ a.desc:after {
 }
 
 #left {
-    background:#AEAE00;
+    background:#EDFFEC;
     width:200px;
     float:left;
 }
 
 #center {
-    background:#D86927;
+    background:#FFFFEC;
     margin-left:200px;
 }
 
