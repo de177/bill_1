@@ -18,7 +18,7 @@ NavBar::begin([
     ],
 ]);
 echo Nav::widget([
-    'options' => ['class' => 'navbar-nav navbar-right'],
+    'options' => ['class' => 'my-navbar navbar-right'],
     'items' => [
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'About', 'url' => ['/site/about']],
