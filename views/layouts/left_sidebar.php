@@ -14,7 +14,6 @@ echo SideNav::widget([
     'type' => SideNav::TYPE_SUCCESS,
     'heading' => '<i class="glyphicon glyphicon-cog"></i> Operations',
     'items' => [
-        ['label' => 'Управление аккаунтами', 'icon' => 'user', 'url' => Url::to(['/site/clients'])],
 
         ['label' => 'Управление аккаунтами', 'icon' => 'user', 'items' => [
             ['label' => 'Клиенты', 'url' => Url::to(['/site/clients'])],
