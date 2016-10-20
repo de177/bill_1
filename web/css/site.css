@@ -123,7 +123,7 @@ a.desc:after {
 #container1 {
     width:100%;
     float:left;
-    margin-right:-180px;
+    margin-right:-200px;
 }
 
 #container2 {
@@ -134,19 +134,21 @@ a.desc:after {
 #container3 {
     width:100%;
     float:right;
-    margin-left:-30%;
+    margin-left:-50%;
 }
 
 #left {
     background:#EDFFEC;
-    width:30%;
+    width:28%;
     float:left;
+    padding:10px;
 }
 
 #center {
     background:#FFFFEC;
-    width:70%;
+    width:65%;
     float:right;
+    padding:10px;
 }
 
 #min_width {
@@ -156,7 +158,7 @@ a.desc:after {
 #footer {
     position:absolute;
     bottom:0;
-    background:#F2F2F2;
+    background:#BDBDBD;
     width:100%;
     height:30px;
 }
