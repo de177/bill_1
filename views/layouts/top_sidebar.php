@@ -10,7 +10,7 @@ use yii\bootstrap\NavBar;
 <?php
 
 NavBar::begin([
-    'brandLabel' => 'My Company',
+    'brandLabel' => 'Горизонт-Телеком',
     'brandUrl' => Yii::$app->homeUrl,
     'options' => [
         'class' => 'navbar-inverse navbar-default navbar-custom ',
