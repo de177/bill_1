@@ -1,6 +1,7 @@
 html {
     height:100%;
     background-color: #F2F2F2;
+    min-width: 850px;
 
     }
 
@@ -127,7 +128,7 @@ a.desc:after {
 
 #content {
     padding-bottom:60px;
-    width:expression(document.body.clientWidth > 800 ? "100%" : "800px");
+    width:expression(document.body.clientWidth > 800 ? "100%" : "850px");
     overflow:hidden;
 }
 
@@ -163,7 +164,7 @@ a.desc:after {
 }
 
 #min_width {
-    width:800px;
+    width:850px;
 }
 
 #footer {
