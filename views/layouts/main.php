@@ -26,7 +26,7 @@ AppAsset::register($this);
 
     <!-- top navigation -->
 
-    <div id="header">Заголовок страницы
+    <div class="my-navbar">Заголовок страницы
 
         <?php $this->beginContent('@app/views/layouts/top_sidebar.php'); ?>
 
