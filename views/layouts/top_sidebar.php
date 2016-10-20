@@ -13,12 +13,12 @@ NavBar::begin([
     'brandLabel' => 'My Company',
     'brandUrl' => Yii::$app->homeUrl,
     'options' => [
-        'class' => 'navbar-inverse',
+        'class' => 'navbar-inverse navbar-default navbar-custom ',
 
     ],
 ]);
 echo Nav::widget([
-    'options' => ['class' => 'navbar-default navbar-custom navbar-right'],
+    'options' => ['class' => 'navbar-nav navbar-right'],
     'items' => [
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'About', 'url' => ['/site/about']],
