@@ -112,6 +112,8 @@ a.desc:after {
 
 .my-navbar {
     background-color: #D8F781;
+    height:70px;
+    width:100%;
             }
 
 /* html style */
