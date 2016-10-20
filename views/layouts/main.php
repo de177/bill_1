@@ -72,11 +72,13 @@ AppAsset::register($this);
         <!-- /page content -->
 
 
+    <!-- footer content -->
 
     <div id="footer">
         <p class="pull-right" style="text-align: right;">&copy; Copyright My Company <?= date('Y') ?>
     </div>
 
+    <!-- /footer content -->
 
 <?php $this->endBody() ?>
 </body>
