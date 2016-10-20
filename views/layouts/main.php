@@ -26,7 +26,7 @@ AppAsset::register($this);
 
     <!-- top navigation -->
 
-    <div class="my-navbar">
+    <div class="navbar-inverse">
 
         <?php $this->beginContent('@app/views/layouts/top_sidebar.php'); ?>
 
