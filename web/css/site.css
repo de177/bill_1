@@ -3,6 +3,7 @@ body {
     height: 100%;
     margin: 0 auto;
     position:relative;
+    min-width: 800px;
     width:80%;
 }
 
