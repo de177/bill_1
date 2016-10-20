@@ -106,7 +106,7 @@ AppAsset::register($this);
     <!-- footer content -->
 
     <div id="footer">
-        <p class="pull-right" style="text-align: right;">&copy; Copyright My Company <?= date('Y') ?>
+        <p class="pull-right" style="text-align: left; font-size: 9px; ">&copy; Copyright My Company <?= date('Y') ?>
     </div>
 
     <!-- /footer content -->
