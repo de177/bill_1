@@ -12,7 +12,6 @@ body {
     position:relative;
     min-width: 1000px;
     width:80%;
-    background-color: #F2F2F2;
 
 }
 
@@ -154,14 +153,12 @@ a.desc:after {
 }
 
 #left {
-    background:#EDFFEC;
     width:30%;
     float:left;
     padding:10px;
 }
 
 #center {
-    background:#FFFFEC;
     width:70%;
     float:right;
     padding:10px;
