@@ -1,11 +1,16 @@
-<h1>Список клиентов</h1>
+
+<h1><?php echo $cl_var1InView; ?></h1>
 
 
-<?php
+<div>
 
-    echo $cl_var1InView;
-    echo $arrayInView;
+    <ul>
+
+        <?php foreach ($arrayInView as $item): ?>
+        <li><?php echo $item ?> </li>
+        <?php endforeach; ?>
+
+    </ul>
 
 
-?>
-
+</div>
