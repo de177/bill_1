@@ -9,6 +9,7 @@ use yii\web\Controller;
 use app\models\Signup;
 use app\models\Login;
 use app\models\DateTime;
+use app\models\Clients;
 
 class SiteController extends Controller
 {
@@ -120,13 +121,9 @@ class SiteController extends Controller
     {
 
         $cl_var1 = 'Переменная cl_var1';
-        $array = [
 
-            1 =>'Первый клиент',
-            2 =>'Второй клиент',
-            3 =>'Третий клиент'
+        $array = Clients::getAll();
 
-        ];
 
         return $this->render('clients', ['cl_var1InView' => $cl_var1, 'arrayInView' => $array]);
     }
