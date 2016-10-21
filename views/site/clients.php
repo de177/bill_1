@@ -7,7 +7,7 @@
     <ul>
 
         <?php foreach ($arrayInView as $item): ?>
-        <li><?php echo $item ?> </li>
+        <li><?php echo $item -> name ?> </li>
         <?php endforeach; ?>
 
     </ul>

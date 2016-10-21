@@ -17,15 +17,8 @@ class Clients extends \yii\db\ActiveRecord
     public static function getAll()
 
     {
-        $array = [
-
-            1 =>'Первый клиент',
-            2 =>'Второй клиент',
-            3 =>'Третий клиент'
-
-        ];
-
-        return $array;
+        $data = self::find() ->all();
+        return $data;
     }
 
 
