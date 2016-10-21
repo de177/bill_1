@@ -118,7 +118,10 @@ class SiteController extends Controller
 
     public function actionClients ()
     {
-        return $this->render('clients');
+
+        $cl_var1 = 'Переменная cl_var1';
+
+        return $this->render('clients', ['cl_var1InView' => $cl_var1]);
     }
 
 }
