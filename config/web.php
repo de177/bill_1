@@ -39,7 +39,7 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-/*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
@@ -49,7 +49,7 @@ $config = [
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>'
             ],
         ],
-*/
+
 
 
     ],
