@@ -49,6 +49,11 @@ $config = [
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>'
             ],
         ],
+
+        'gii' => [
+            'class' => 'yii\gii\Module',
+            'allowedIPs' => ['127.0.0.1', '::1', '10.222.51.111'] // регулируйте в соответствии со своими нуждами
+        ],
     ],
     'params' => $params,
 ];
@@ -65,10 +70,7 @@ if (YII_ENV_DEV) {
         'class' => 'yii\gii\Module',
     ];
 
-    'gii' => [
-        'class' => 'yii\gii\Module',
-        'allowedIPs' => ['127.0.0.1', '::1', '10.222.51.111'] // регулируйте в соответствии со своими нуждами
-    ],
+
 }
 
 return $config;
