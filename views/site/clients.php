@@ -12,6 +12,6 @@
 
     </ul>
 
-    <h1><?php echo $arrayInView; ?></h1>
+
 
 </div>
