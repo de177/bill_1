@@ -153,13 +153,13 @@ a.desc:after {
 }
 
 #left {
-    width:30%;
+    width:20%;
     float:left;
     padding:10px;
 }
 
 #center {
-    width:70%;
+    width:80%;
     float:right;
     padding:10px;
 }
