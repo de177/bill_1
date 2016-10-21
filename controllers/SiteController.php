@@ -132,7 +132,7 @@ class SiteController extends Controller
 
     public function actionClientsdetail ()
     {
-        return $this->render('clientsdetail');
+        return $this->render('clients/clientsdetail');
     }
 
 }
