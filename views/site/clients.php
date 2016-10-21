@@ -1,5 +1,5 @@
 <h1>Список клиентов</h1>
 
 
-        <?= echo $cl_var1InView; ?>
+<?php echo $cl_var1InView; ?>
 
