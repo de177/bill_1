@@ -120,8 +120,15 @@ class SiteController extends Controller
     {
 
         $cl_var1 = 'Переменная cl_var1';
+        $array = [
 
-        return $this->render('clients', ['cl_var1InView' => $cl_var1]);
+            1 =>'Первый клиент',
+            2 =>'Второй клиент',
+            3 =>'Третий клиент'
+
+        ];
+
+        return $this->render('clients', ['cl_var1InView' => $cl_var1], ['arrayInView' => $array]);
     }
 
 }
