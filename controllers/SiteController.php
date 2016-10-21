@@ -128,7 +128,7 @@ class SiteController extends Controller
 
         ];
 
-        return $this->render('clients', ['cl_var1InView' => $cl_var1], ['arrayInView' => $array]);
+        return $this->render('clients', ['cl_var1InView' => $cl_var1, 'arrayInView' => $array]);
     }
 
 }
