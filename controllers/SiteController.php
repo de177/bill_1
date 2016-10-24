@@ -130,7 +130,7 @@ class SiteController extends Controller
     }
 
 
-    public function actionClients_detail ($id)
+    public function actionClients_detail($id)
     {
 
         $one = Clients::getOne();
