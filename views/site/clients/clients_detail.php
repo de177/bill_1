@@ -3,6 +3,5 @@
 <h3><?= $one -> name ?></h3>
 
 <p>
-
     <?= $one -> email ?>
 </p>
