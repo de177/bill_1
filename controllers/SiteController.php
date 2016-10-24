@@ -133,7 +133,7 @@ class SiteController extends Controller
     public function actionClients_detail ($id)
     {
 
-        $one = Clients::getOne();
+        $one = Clients::getOne($id);
 
         return $this->render('clients/clients_detail', [ 'one' => $one]);
     }

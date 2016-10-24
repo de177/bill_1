@@ -25,7 +25,7 @@ class Clients extends \yii\db\ActiveRecord
     {
         $query = self::find()
 
-            ->where(['id' => 114])
+            ->where(['id' => $id])
             ->one();
 
          return $query;
