@@ -6,7 +6,7 @@
 
     <?php foreach ($arrayInView as $item): ?>
         <p>
-            <a href ="/site/view/<?= $item ->id?>"><?php echo $item -> name ?></a>
+            <a href ="/site/<?= $item ->id?>"><?php echo $item -> name ?></a>
         </p>
 
 
