@@ -4,13 +4,15 @@
 
 <div>
 
-    <ul>
+    <?php foreach ($arrayInView as $item): ?>
+        <p>
+            <a herf ="/site/view/<?= $item ->$id?>"> <?php echo $item -> name ?></a>
+        </p>
 
-        <?php foreach ($arrayInView as $item): ?>
-        <li><?php echo $item -> name ?> </li>
-        <?php endforeach; ?>
 
-    </ul>
+    <?php endforeach; ?>
+
+
 
 
 
