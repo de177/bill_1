@@ -21,5 +21,13 @@ class Clients extends \yii\db\ActiveRecord
         return $data;
     }
 
+    public static function getOne()
+    {
+        $query = self::find()
 
+            ->where(['id' => 114])
+            ->one();
+
+         return $query;
+    }
 }

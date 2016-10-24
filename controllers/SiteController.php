@@ -132,7 +132,10 @@ class SiteController extends Controller
 
     public function actionClients_detail ()
     {
-        return $this->render('clients/clients_detail');
+
+        $one = Clients::getOne();
+
+        return $this->render('clients/clients_detail', [ 'one' => $one]);
     }
 
 }
