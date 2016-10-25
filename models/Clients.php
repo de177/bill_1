@@ -5,6 +5,8 @@ namespace app\models;
 
 
 use yii\base\Model;
+use yii\data\ActiveDataProvider;
+
 
 class Clients extends \yii\db\ActiveRecord
 {
@@ -30,4 +32,7 @@ class Clients extends \yii\db\ActiveRecord
 
          return $query;
     }
+
+
+
 }

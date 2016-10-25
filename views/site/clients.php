@@ -1,3 +1,10 @@
+<?php
+
+use yii\helpers\Html;
+use yii\grid\GridView;
+
+
+?>
 
 <h1><?php echo $cl_var1InView; ?></h1>
 
@@ -22,4 +29,16 @@
 
 </div>
 
+
+<?= GridView::widget(
+    [
+        /**
+        * Экземпляр класса, который реализует \yii\data\DataProviderInterface. В нашем случае ActiveDataProvider
+        */
+        'dataProvider' => $arrayInView,
+    ]
+
+);
+
+?>
 
