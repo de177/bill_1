@@ -13,8 +13,13 @@
     <?php endforeach; ?>
 
 
+</div>
 
-
-
+<div>
+    <p>
+        <h2>А тут начнеться GridView</h2>
+    </p>
 
 </div>
+
+
