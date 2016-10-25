@@ -33,6 +33,18 @@ class Clients extends \yii\db\ActiveRecord
          return $query;
     }
 
+    public function getList ()
+    {
+        $query = Clients::find();
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+        return $dataProvider;
+
+    }
+
 
 
 }
