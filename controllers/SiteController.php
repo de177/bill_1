@@ -125,7 +125,7 @@ class SiteController extends Controller
         $array = Clients::getAll();
 
         $searchModel = new Clients();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = $searchModel->GetList(Yii::$app->request->queryParams);
 
 
         return $this->render('clients', ['cl_var1InView' => $cl_var1, 'arrayInView' => $array, 'dataProvider' => $dataProvider]);
