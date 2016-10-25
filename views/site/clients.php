@@ -37,6 +37,15 @@ use yii\grid\GridView;
         */
         'dataProvider' => $dataProvider,
         'emptyCell' => '-',
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+            'id',
+            'name',
+            'inn',
+            'email',
+            ['class' => 'yii\grid\ActionColumn'],
+
+        ],
     ]
 
 );
