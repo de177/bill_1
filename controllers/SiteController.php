@@ -124,7 +124,7 @@ class SiteController extends Controller
 
         $array = Clients::getAll();
 
-        $searchModel = new CategorySearch();
+        $searchModel = new Clients();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
 
