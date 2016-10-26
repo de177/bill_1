@@ -24,7 +24,13 @@ class ClientsController extends Controller
         $dataProvider = $searchModel->GetList(Yii::$app->request->queryParams);
 
 
-        return $this->render('index', ['cl_var1InView' => $cl_var1, 'arrayInView' => $array, 'dataProvider' => $dataProvider]);
+        return $this->render('index', [
+            'cl_var1InView' => $cl_var1,
+            'arrayInView' => $array,
+            'dataProvider' => $dataProvider,
+            'searchModel' => $searchModel
+
+        ]);
 
     }
 
