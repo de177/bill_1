@@ -36,6 +36,7 @@ use yii\grid\GridView;
         * Экземпляр класса, который реализует \yii\data\DataProviderInterface. В нашем случае ActiveDataProvider
         */
         'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
         // 'emptyCell' => '-',
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],

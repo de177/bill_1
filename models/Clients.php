@@ -58,7 +58,7 @@ class Clients extends \yii\db\ActiveRecord
             'org_form' => 'Форма',
             'inn' => 'ИНН',
             'email' => 'Email',
-            'address' => 'Адресс',
+            'address' => 'Адрес',
             'city' => 'Город',
             'postal' => 'Индекс',
             'country' => 'Страна',
