@@ -33,6 +33,15 @@ class Clients extends \yii\db\ActiveRecord
          return $query;
     }
 
+    public function rules()
+    {
+        return [
+            [['id', 'tariff_id', 'service_id', 'service_flag', 'inn'], 'integer'],
+            [['name', 'login', 'password', 'org_form', 'email', 'address', 'city', 'postal', 'country', 'status'], 'safe'],
+        ];
+    }
+
+
     public function getList ($params)
     {
         $query = Clients::find();
