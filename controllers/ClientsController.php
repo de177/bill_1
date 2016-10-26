@@ -37,6 +37,21 @@ class ClientsController extends Controller
         return $this->render('clients/clients_detail', [ 'one' => $one]);
     }
 
+    public function actionClients_detail ($id)
+    {
+
+        $one = Clients::getOne($id);
+
+        return $this->render('clients/clients_detail', [ 'one' => $one]);
+    }
+
+    public function actionView($id)
+    {
+        return $this->render('view', [
+            'model' => $this->findModel($id),
+        ]);
+    }
+
 
 
 }
