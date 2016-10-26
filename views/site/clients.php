@@ -43,7 +43,13 @@ use yii\grid\GridView;
             'inn',
             'email',
             'status',
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'header'=>'Action',
+                'headerOptions' => ['width' => '80'],
+                'template' => '{view} {update} {delete}{link}',
+
+            ],
 
         ],
     ]
