@@ -33,13 +33,40 @@ class Clients extends \yii\db\ActiveRecord
          return $query;
     }
 
-    public function getList ()
+    public function getList ($params)
     {
         $query = Clients::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+                'forcePageParam' => false,
+                'pageSizeParam' => false,
+                'pageSize' => 5
+                            ]
         ]);
+
+        $this->load($params);
+
+
+        $query->andFilterWhere([
+            'id' => $this->id,
+            'tariff_id' => $this->tariff_id,
+            'service_id' => $this->service_id,
+            'service_flag' => $this->service_flag,
+            'inn' => $this->inn,
+        ]);
+
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'login', $this->login])
+            ->andFilterWhere(['like', 'password', $this->password])
+            ->andFilterWhere(['like', 'org_form', $this->org_form])
+            ->andFilterWhere(['like', 'email', $this->email])
+            ->andFilterWhere(['like', 'address', $this->address])
+            ->andFilterWhere(['like', 'city', $this->city])
+            ->andFilterWhere(['like', 'postal', $this->postal])
+            ->andFilterWhere(['like', 'country', $this->country])
+            ->andFilterWhere(['like', 'status', $this->status]);
 
         return $dataProvider;
 
