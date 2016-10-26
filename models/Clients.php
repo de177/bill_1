@@ -45,6 +45,25 @@ class Clients extends \yii\db\ActiveRecord
 
     }
 
-
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'id',
+            'name' => 'Name',
+            'tariff_id' => 'Tariff ID',
+            'service_id' => 'Service ID',
+            'service_flag' => 'Service Flag',
+            'login' => 'Login',
+            'password' => 'Password',
+            'org_form' => 'Org Form',
+            'inn' => 'Inn',
+            'email' => 'Email',
+            'address' => 'Address',
+            'city' => 'City',
+            'postal' => 'Postal',
+            'country' => 'Country',
+            'status' => 'Active',
+        ];
+    }
 
 }

@@ -42,7 +42,7 @@ use yii\grid\GridView;
             'name',
             'inn',
             'email',
-            'status'=> 'Active',
+            'status' => 'Active',
             [
                 'class' => 'yii\grid\ActionColumn',
                 'header'=>'Action',
