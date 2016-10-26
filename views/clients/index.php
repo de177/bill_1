@@ -63,14 +63,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
 
                 'value' => function ($model) {
-                    $active = $model === 1;
-                    return \yii\helpers\Html::tag(
-                        'span',
-                        $active ? 'Active' : 'Inactive',
-                        [
-                            'class' => 'label label-' . ($active ? 'success' : 'danger'),
-                        ]
-                    );
+                    return $model->status == 'Active' ? 'Active' : 'Blocked';
+
                 },
 
 
