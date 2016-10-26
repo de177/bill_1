@@ -13,6 +13,19 @@ use yii\filters\VerbFilter;
 class ClientsController extends Controller
 {
 
+    public function behaviors()
+    {
+        return [
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'delete' => ['POST'],
+                ],
+            ],
+        ];
+    }
+
+
     public function actionIndex ()
     {
 
@@ -50,6 +63,21 @@ class ClientsController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
+
+    public function actionCreate()
+    {
+        $model = new Clients();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->id]);
+        } else {
+            return $this->render('create', [
+                'model' => $model,
+            ]);
+        }
+    }
+
+
 
     /**
      * Finds the Clients model based on its primary key value.
