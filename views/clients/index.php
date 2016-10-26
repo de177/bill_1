@@ -63,10 +63,10 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
 
                 'value' => function ($model, $key, $index, $column) {
-                    $active = $model->{$column->attribute} === 1;
+                    $active = $model->{$column->attribute} == 1;
                     return \yii\helpers\Html::tag(
                         'span',
-                        $active ? '1' : '0',
+                        $active ? 'Active' : 'Inactive',
                         [
                             'class' => 'label label-' . ($active ? 'success' : 'danger'),
                         ]
