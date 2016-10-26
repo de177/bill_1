@@ -56,6 +56,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'email',
             [
                 'attribute' => 'status',
+                'format' => 'raw',
+                'filter' => [
+                    0 => 'Inactive',
+                    1 => 'Active',
+                ],
                 //'label'=>'Active22',
             ],
 
