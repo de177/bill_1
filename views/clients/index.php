@@ -44,7 +44,7 @@ use yii\grid\GridView;
             'email',
             [
                 'attribute' => 'status',
-                'label'=>'Active',
+                'label'=>'Active22',
             ],
 
             [
