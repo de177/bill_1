@@ -49,20 +49,20 @@ class Clients extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'id',
-            'name' => 'Name',
+            'name' => 'Наименование',
             'tariff_id' => 'Tariff ID',
             'service_id' => 'Service ID',
             'service_flag' => 'Service Flag',
             'login' => 'Login',
             'password' => 'Password',
-            'org_form' => 'Org Form',
-            'inn' => 'Inn',
+            'org_form' => 'Форма',
+            'inn' => 'ИНН',
             'email' => 'Email',
-            'address' => 'Address',
-            'city' => 'City',
-            'postal' => 'Postal',
-            'country' => 'Country',
-            'status' => 'Active',
+            'address' => 'Адресс',
+            'city' => 'Город',
+            'postal' => 'Индекс',
+            'country' => 'Страна',
+            'status' => 'Статус',
         ];
     }
 
