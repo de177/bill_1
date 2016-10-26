@@ -37,13 +37,6 @@ class ClientsController extends Controller
         return $this->render('clients/clients_detail', [ 'one' => $one]);
     }
 
-    public function actionClients_detail ($id)
-    {
-
-        $one = Clients::getOne($id);
-
-        return $this->render('clients/clients_detail', [ 'one' => $one]);
-    }
 
     public function actionView($id)
     {
@@ -52,6 +45,20 @@ class ClientsController extends Controller
         ]);
     }
 
-
+    /**
+     * Finds the Clients model based on its primary key value.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     * @param integer $id
+     * @return Clients the loaded model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    protected function findModel($id)
+    {
+        if (($model = Clients::findOne($id)) !== null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
 
 }
