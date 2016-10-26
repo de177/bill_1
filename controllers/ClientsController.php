@@ -28,7 +28,7 @@ class ClientsController extends Controller
             'cl_var1InView' => $cl_var1,
             'arrayInView' => $array,
             'dataProvider' => $dataProvider,
-            'searchModel' => $searchModel
+            'searchModel' => $searchModel,
 
         ]);
 
