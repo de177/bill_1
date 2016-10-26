@@ -29,6 +29,13 @@ use yii\grid\GridView;
 
 </div>
 
+<div class="category-index">
+
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
+<p>
+    <?= Html::a('Добавить клиента', ['create'], ['class' => 'btn btn-success']) ?>
+</p>
 
 <?= GridView::widget(
     [
@@ -63,3 +70,4 @@ use yii\grid\GridView;
 
 ?>
 
+</div>
