@@ -62,8 +62,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     1 => 'Active',
                 ],
 
-                'value' => function ($model, $key, $index, $column) {
-                    $active = $model->{$column->attribute} === 1;
+                'value' => function ($model) {
+                    $active = $model === 1;
                     return \yii\helpers\Html::tag(
                         'span',
                         $active ? 'Active' : 'Inactive',
