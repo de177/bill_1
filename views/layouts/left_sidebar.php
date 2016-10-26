@@ -16,7 +16,7 @@ echo SideNav::widget([
     'items' => [
 
         ['label' => 'Управление аккаунтами', 'icon' => 'user', 'items' => [
-            ['label' => 'Клиенты', 'url' => Url::to(['/site/clients'])],
+            ['label' => 'Клиенты', 'url' => Url::to(['/clients/index'])],
             ['label' => 'Пользователи', 'url' => Url::to(['/site/user'])]
         ]],
 

@@ -13,7 +13,7 @@ use yii\filters\VerbFilter;
 class ClientsController extends Controller
 {
 
-    public function actionClients ()
+    public function actionIndex ()
     {
 
         $cl_var1 = 'Переменная cl_var1';
