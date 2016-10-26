@@ -91,32 +91,6 @@ AppAsset::register($this);
 
 
 
-
-                <!-- menu profile quick info -->
-
-
-                <!-- /menu profile quick info -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- footer content -->
 
     <div id="footer">
