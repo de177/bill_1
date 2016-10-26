@@ -58,14 +58,28 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'status',
                 'format' => 'raw',
                 'filter' => [
-                    0 => 'Inactive',
                     1 => 'Active',
+                    0 => 'Inactive',
                 ],
 
+                'value' => function ($model, $key, $index, $column) {
+                    $active = $model->{$column->attribute} === 1;
+                    return \yii\helpers\Html::tag(
+                        'span',
+                        $active ? '1' : '0',
+                        [
+                            'class' => 'label label-' . ($active ? 'success' : 'danger'),
+                        ]
+                    );
+                },
+
+                /*
+                 * Такой вариат
                 'value' => function ($model) {
                     return $model->status == '1' ? 'Active' : 'Inactive';
 
                 },
+                */
 
 
 
