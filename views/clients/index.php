@@ -63,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
 
                 'value' => function ($model) {
-                    return $model->status == '1' ? 'Active' : 'Blocked';
+                    return $model->status == '1' ? 'Active' : 'Inactive';
 
                 },
 
