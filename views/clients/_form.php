@@ -11,7 +11,18 @@ use yii\widgets\ActiveForm;
 
 <div class="clients-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin();
+
+    $items_status = [
+        '0' => 'Inactive',
+        '1' => 'Active'
+            ];
+
+    $params = [
+        'prompt' => 'Выберите статус...'
+    ];
+
+    ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
@@ -39,10 +50,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'status')->dropDownList([
-        '0' => 'Inactive',
-        '1' => 'Active',
-    ]) ?>
+    <?= $form->field($model, 'status')->dropDownList([$items_status,$params]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
