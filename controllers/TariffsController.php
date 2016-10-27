@@ -35,7 +35,7 @@ class TariffsController extends Controller
 
             $tr_var1 = 'Переменная TR_var1';
 
-            // $array = Clients::getAll();
+            $array = Gtel_Tariffs::getList();
 
             // $searchModel = new Clients();
             //$dataProvider = $searchModel->GetList(Yii::$app->request->queryParams);
@@ -43,7 +43,7 @@ class TariffsController extends Controller
 
             return $this->render('index', [
                 'tr_var1InView' => $tr_var1,
-              //  'arrayInView' => $array,
+                'arrayInView' => $array,
               //  'dataProvider' => $dataProvider,
               //  'searchModel' => $searchModel,
 
