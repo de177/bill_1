@@ -50,7 +50,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'country')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'status')->dropDownList([$items_status,$params]) ?>
+    <?= $form->field($model, 'status')->dropDownList($items_status,$params) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
