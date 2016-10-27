@@ -29,6 +29,9 @@ class ClientsController extends Controller
     public function actionIndex ()
     {
 
+
+        if(!Yii::$app->user->isGuest) {
+
         $cl_var1 = 'Переменная cl_var1';
 
         $array = Clients::getAll();
@@ -44,6 +47,14 @@ class ClientsController extends Controller
             'searchModel' => $searchModel,
 
         ]);
+
+    }   else
+        {
+
+            return $this->redirect(['login']);
+        }
+
+
 
     }
 
