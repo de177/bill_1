@@ -22,8 +22,8 @@ echo SideNav::widget([
 
 
         ['label' => 'Управление тарифами', 'icon' => 'rub', 'items' => [
-            ['label' => 'Создать', 'url' => Url::to(['/site/online-1'])],
-            ['label' => 'Список', 'url' => Url::to(['/site/online-2'])]
+            ['label' => 'Тарифы', 'url' => Url::to(['/tariffs/index'])],
+            ['label' => 'Стоимость', 'url' => Url::to(['/tariffs/cost'])]
         ]],
 
     ],
