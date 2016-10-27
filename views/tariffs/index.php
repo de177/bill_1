@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php foreach ($arrayInView as $item): ?>
         <p>
-            <a href ="/site/clients_detail/<?= $item ->id?>"><?php echo $item -> name ?></a>
+            <a href ="/site/clients_detail/<?= $item ->ID?>"><?php echo $item -> name ?></a>
         </p>
 
 
