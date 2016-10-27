@@ -51,7 +51,7 @@ class Clients extends \yii\db\ActiveRecord
             'pagination' => [
                 'forcePageParam' => false,
                 'pageSizeParam' => false,
-                'pageSize' => 5
+                'pageSize' => 15
                             ]
         ]);
 
