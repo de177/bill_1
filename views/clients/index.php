@@ -7,26 +7,27 @@ $this->title = 'Clients';
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
-
-<h1><?php echo $cl_var1InView; ?></h1>
+<!---
+<h1><?php //echo $cl_var1InView; ?></h1>
 
 
 <div>
 
-    <?php foreach ($arrayInView as $item): ?>
+    <?php //foreach ($arrayInView as $item): ?>
         <p>
-            <a href ="/site/clients_detail/<?= $item ->id?>"><?php echo $item -> name ?></a>
+            <a href ="/site/clients_detail/<?= //$item ->id?>"><?php //echo $item -> name ?></a>
         </p>
 
 
-    <?php endforeach; ?>
+    <?php //endforeach; ?>
 
 
 </div>
+--->
 
 <div>
     <p>
-        <h2>А тут начнеться GridView</h2>
+        <h4>Управление клиентами</h4>
     </p>
 
 </div>
