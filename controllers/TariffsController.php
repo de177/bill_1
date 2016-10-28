@@ -49,7 +49,7 @@ class TariffsController extends Controller
                 'tr_var1InView' => $tr_var1,
                 'arrayInView' => $array,
                 'cl_array' => $cl_array,
-                'model' => $model,
+                'model' => $this->findModel($id),
               //  'dataProvider' => $dataProvider,
               //  'searchModel' => $searchModel,
 
@@ -63,6 +63,22 @@ class TariffsController extends Controller
 
 
 
+    }
+
+    /**
+     * Finds the Clients model based on its primary key value.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     * @param integer $id
+     * @return Clients the loaded model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    protected function findModel($id)
+    {
+        if (($model = Gtel_Tariffs::findOne($id)) !== null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
     }
 
 
