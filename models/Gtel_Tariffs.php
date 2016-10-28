@@ -8,7 +8,7 @@ use yii\base\Model;
 use yii\data\ActiveDataProvider;
 
 
-class gtel_tariffs extends \yii\db\ActiveRecord
+class Gtel_tariffs extends \yii\db\ActiveRecord
 {
     public static function tableName()
     {
@@ -29,6 +29,8 @@ class gtel_tariffs extends \yii\db\ActiveRecord
     {
         $data = self::find() ->all();
         return $data;
+
+
     }
 
 
@@ -36,7 +38,7 @@ class gtel_tariffs extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'Tariff ID',
+            'ID' => 'Tariff ID',
             'name' => 'Наименование',
 
         ];
