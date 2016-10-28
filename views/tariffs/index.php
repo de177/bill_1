@@ -32,3 +32,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 </div>
+
+<div>
+    <p>
+        <?= $cl_array -> name ?>
+    </p>
+
+</div>

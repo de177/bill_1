@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use app\models\Gtel_Tariffs;
+use app\models\Clients;
 
 
 class TariffsController extends Controller
@@ -38,6 +39,8 @@ class TariffsController extends Controller
 
             $array = Gtel_Tariffs::getList();
 
+            $cl_array = Clients::getAll();
+
             // $searchModel = new Clients();
             //$dataProvider = $searchModel->GetList(Yii::$app->request->queryParams);
 
@@ -45,6 +48,7 @@ class TariffsController extends Controller
             return $this->render('index', [
                 'tr_var1InView' => $tr_var1,
                 'arrayInView' => $array,
+                'cl_array' => $cl_array,
               //  'dataProvider' => $dataProvider,
               //  'searchModel' => $searchModel,
 

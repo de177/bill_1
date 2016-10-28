@@ -6,6 +6,7 @@ use Yii;
 use yii\base\Model;
 use yii\web\Controller;
 use app\models\Clients;
+use app\models\Gtel_Tariffs;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -35,6 +36,7 @@ class ClientsController extends Controller
         $cl_var1 = 'Переменная cl_var1';
 
         $array = Clients::getAll();
+
 
         $searchModel = new Clients();
         $dataProvider = $searchModel->GetList(Yii::$app->request->queryParams);

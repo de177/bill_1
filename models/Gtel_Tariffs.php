@@ -7,6 +7,7 @@ namespace app\models;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 
+
 class gtel_tariffs extends \yii\db\ActiveRecord
 {
     public static function tableName()
