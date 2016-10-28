@@ -49,6 +49,7 @@ class TariffsController extends Controller
                 'tr_var1InView' => $tr_var1,
                 'arrayInView' => $array,
                 'cl_array' => $cl_array,
+                'model' => $model,
               //  'dataProvider' => $dataProvider,
               //  'searchModel' => $searchModel,
 
