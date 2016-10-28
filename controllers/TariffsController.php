@@ -29,7 +29,7 @@ class TariffsController extends Controller
     }
 
 
-    public function actionIndex ($id)
+    public function actionIndex ()
     {
 
 
@@ -41,7 +41,7 @@ class TariffsController extends Controller
 
             $cl_array = Clients::getAll();
 
-            $model = Gtel_tariffs::getOne($id);
+            $model = Gtel_tariffs::getList();
 
             // $searchModel = new Clients();
             //$dataProvider = $searchModel->GetList(Yii::$app->request->queryParams);
