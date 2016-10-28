@@ -33,6 +33,16 @@ class Gtel_tariffs extends \yii\db\ActiveRecord
 
     }
 
+    public static function getOne($id)
+    {
+        $query = self::find()
+
+            ->where(['id' => $id])
+            ->one();
+
+        return $query;
+    }
+
 
 
     public function attributeLabels()
