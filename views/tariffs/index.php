@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
 // получаем всех авторов
 $authors = \app\models\Gtel_tariffs::find()->all();
 // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
-$items = ArrayHelper::map($authors,'id','name');
+$items = ArrayHelper::map($authors,'ID','name');
 $params = [
     'prompt' => 'Укажите автора записи'
 ];
