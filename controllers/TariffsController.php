@@ -29,7 +29,7 @@ class TariffsController extends Controller
     }
 
 
-    public function actionIndex ()
+    public function actionIndex ($id)
     {
 
 
