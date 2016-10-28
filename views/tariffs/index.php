@@ -36,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div>
     <?php foreach ($cl_array as $item_cl): ?>
         <p>
-            <a href ="/site/clients_detail/<?= $item_cl ->ID?>"><?php echo $item_cl -> name ?></a>
+            <a href ="/site/clients_detail/<?= $item_cl ->id?>"><?php echo $item_cl -> name ?></a>
         </p>
 
 
