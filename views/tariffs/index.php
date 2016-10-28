@@ -33,6 +33,23 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </div>
 
+
+<?php
+    $form = ActiveForm::begin();
+
+        // получаем всех авторов
+        //$authors = \app\models\Clients::find()->all();
+        // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
+        $items1 = ArrayHelper::map($cl_array,'id','name');
+        $params1 = [
+            'prompt' => 'Укажите автора записи'
+                ];
+
+        echo $form->field($model, 'name')->dropDownList($items1,$params1);
+
+        ActiveForm::end();
+?>
+
 <div>
     <?php foreach ($cl_array as $item_cl): ?>
         <p>
