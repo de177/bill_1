@@ -71,4 +71,4 @@ echo $form->field($model, 'name')->dropDownList($items, [
 ActiveForm::end();
 ?>
 
-<h1><?php echo $items; ?></h1>
+<?php echo $form->field($model,'name'); ?>
