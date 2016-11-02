@@ -68,8 +68,6 @@ echo $form->field($model, 'name')->dropDownList($items,$params);
  //   ]
 
 //]);
-echo $form->field($model,'name');
 ActiveForm::end();
 ?>
 
-<?php echo $form->field($model,'name'); ?>
