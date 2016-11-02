@@ -59,8 +59,8 @@ $params = [
 echo $form->field($model, 'name')->dropDownList($items, [
 
     'data' => [
-        'style' => 'btn-success',
-        'live-search' => 'false',
+        'style' => 'btn-primary',
+        'live-search' => 'true',
         'size' => 7,
         'title' => 'Ничего не выбрано'
     ]
