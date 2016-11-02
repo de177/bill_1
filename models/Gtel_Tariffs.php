@@ -33,7 +33,7 @@ class Gtel_tariffs extends \yii\db\ActiveRecord
 
     }
 
-    public static function getOne($ID)
+    public static function getOne()
     {
         $query = self::find()
 
