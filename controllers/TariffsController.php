@@ -29,7 +29,7 @@ class TariffsController extends Controller
     }
 
 
-    public function actionIndex ($ID)
+    public function actionIndex ()
     {
 
 
@@ -50,7 +50,6 @@ class TariffsController extends Controller
                 'tr_var1InView' => $tr_var1,
                 'arrayInView' => $array,
                 'cl_array' => $cl_array,
-                'model' => $this->findModel($ID),
 
 
               //  'dataProvider' => $dataProvider,
