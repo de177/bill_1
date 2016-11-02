@@ -53,7 +53,7 @@ class TariffsController extends Controller
                 'arrayInView' => $array,
                 'cl_array' => $cl_array,
                 'one' => $one,
-                'model'=>$one,
+                'model'=>$array,
 
 
               //  'dataProvider' => $dataProvider,
