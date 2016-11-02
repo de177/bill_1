@@ -36,9 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 
-<?= $form->field($model, 'ID')->textInput() ?>
 
-<?= $form->field($model, 'name')->textInput() ?>
 
 
 <div>
