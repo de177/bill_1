@@ -36,19 +36,9 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 
-<?php $form = ActiveForm::begin();
+<?= $form->field($model, 'ID')->textInput() ?>
 
-// получаем всех авторов
-$name = \app\models\Gtel_tariffs::find()->all();
-// формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
-$items = ArrayHelper::map($name,'ID','name');
-$params = [
-    'prompt' => 'Укажите автора записи'
-];
-echo $form->field($model, 'name')->dropDownList($items,$params);
-
-ActiveForm::end();
-?>
+<?= $form->field($model, 'name')->textInput() ?>
 
 
 <div>
