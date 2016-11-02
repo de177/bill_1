@@ -18,7 +18,7 @@ class Gtel_tariffs extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'integer'],
+            [['ID'], 'integer'],
             [['name'], 'safe'],
         ];
     }
@@ -48,7 +48,7 @@ class Gtel_tariffs extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'Tariff ID',
+            'ID' => 'Tariff ID',
             'name' => 'Наименование',
 
         ];
