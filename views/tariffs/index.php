@@ -43,3 +43,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 </div>
+
+
+<?php
+$form = ActiveForm::begin();
+$items = [
+    '0' => 'Активный',
+    '1' => 'Отключен',
+    '2'=>'Удален'
+];
+$params = [
+    'prompt' => 'Выберите статус...'
+];
+echo $form->field($model, 'status')->dropDownList($items,$params);
+ActiveForm::end();
+?>
