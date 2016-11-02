@@ -42,7 +42,7 @@ class TariffsController extends Controller
             $cl_array = Clients::getAll();
 
             $one = Gtel_tariffs::getOne();
-            $one1 = Gtel_tariffs::getOne1();
+            $TariffsOne = Gtel_tariffs::getTariffsOne();
 
             // $searchModel = new Clients();
             //$dataProvider = $searchModel->GetList(Yii::$app->request->queryParams);
@@ -53,7 +53,7 @@ class TariffsController extends Controller
                 'arrayInView' => $array,
                 'cl_array' => $cl_array,
                 'one' => $one,
-                'model'=>$one1,
+                'model'=>$TariffsOne,
 
 
               //  'dataProvider' => $dataProvider,
