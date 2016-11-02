@@ -57,16 +57,17 @@ $items = ArrayHelper::map($name_all,'ID','name');
 $params = [
     'prompt' => 'Укажите автора записи'
 ];
-echo $form->field($model, 'name')->dropDownList($items, [
+echo $form->field($model, 'name')->dropDownList($items,$params);
+ //   [
 
-    'data' => [
-        'style' => 'btn-primary',
-        'live-search' => 'true',
-        'size' => 7,
-        'prompt' => 'Ничего не выбрано'
-    ]
+ //   'data' => [
+ //       'style' => 'btn-primary',
+ //       'live-search' => 'true',
+ //       'size' => 7,
+ //       'prompt' => 'Ничего не выбрано'
+ //   ]
 
-]);
+//]);
 
 ActiveForm::end();
 ?>
