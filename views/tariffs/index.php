@@ -35,16 +35,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </div>
 
-
-
-
-
 <div>
-    <?php foreach ($cl_array as $item_cl): ?>
-        <p>
-            <a href ="/site/clients_detail/<?= $item_cl ->id?>"><?php echo $item_cl -> name ?></a>
-        </p>
+
+<h1>Детальная информация о тарифе</h1>
+
+<h3><?= $one -> id ?>&nbsp<?= $one -> name ?></h3>
 
 
-    <?php endforeach; ?>
 </div>
