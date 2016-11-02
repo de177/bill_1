@@ -29,7 +29,7 @@ class TariffsController extends Controller
     }
 
 
-    public function actionIndex ()
+    public function actionIndex ($ID)
     {
 
 
@@ -41,7 +41,6 @@ class TariffsController extends Controller
 
             $cl_array = Clients::getAll();
 
-            $model = Gtel_tariffs::getList();
 
             // $searchModel = new Clients();
             //$dataProvider = $searchModel->GetList(Yii::$app->request->queryParams);
@@ -51,7 +50,7 @@ class TariffsController extends Controller
                 'tr_var1InView' => $tr_var1,
                 'arrayInView' => $array,
                 'cl_array' => $cl_array,
-                'model'=>$model
+                'model' => $this->findModel($ID),
 
 
               //  'dataProvider' => $dataProvider,
@@ -76,9 +75,9 @@ class TariffsController extends Controller
      * @return Clients the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id)
+    protected function findModel($ID)
     {
-        if (($model = Gtel_Tariffs::findOne($id)) !== null) {
+        if (($model = Gtel_Tariffs::findOne($ID)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
