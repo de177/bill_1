@@ -45,16 +45,18 @@ $this->params['breadcrumbs'][] = $this->title;
 </div>
 
 
+
 <?php
 $form = ActiveForm::begin();
-$items = [
-    '0' => 'Активный',
-    '1' => 'Отключен',
-    '2'=>'Удален'
-];
+
+// получаем всех авторов
+$name_all = \app\models\Gtel_tariffs::find()->all();
+// формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
+$items = ArrayHelper::map($name_all,'id','name');
 $params = [
-    'prompt' => 'Выберите статус...'
+    'prompt' => 'Укажите автора записи'
 ];
-echo $form->field($model, 'status')->dropDownList($items,$params);
+echo $form->field($model, 'name')->dropDownList($items,$params);
+
 ActiveForm::end();
 ?>
