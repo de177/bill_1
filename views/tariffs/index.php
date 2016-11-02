@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 
-    <style> select { width: 8em } <?php
+<?php
 $form = ActiveForm::begin();
 
 // получаем всех авторов
@@ -63,10 +63,10 @@ echo $form->field($model, 'name')->dropDownList($items, [
         'style' => 'btn-primary',
         'live-search' => 'true',
         'size' => 7,
-        'promt' => 'Ничего не выбрано'
+        'prompt' => 'Ничего не выбрано'
     ]
 
 ]);
 
 ActiveForm::end();
-?></style>
+?>
