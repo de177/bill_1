@@ -54,10 +54,18 @@ $name_all = \app\models\Gtel_tariffs::find()->all();
 // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
 $items = ArrayHelper::map($name_all,'ID','name');
 $params = [
-    'prompt' => 'Укажите автора записи',
-    'size' => 7
+    'prompt' => 'Укажите автора записи'
 ];
-echo $form->field($model, 'name')->dropDownList($items,$params);
+echo $form->field($model, 'name')->dropDownList($items, [
+
+    'data' => [
+        'style' => 'btn-success',
+        'live-search' => 'false',
+        'size' => 7,
+        'title' => 'Ничего не выбрано'
+    ]
+
+]);
 
 ActiveForm::end();
 ?>
