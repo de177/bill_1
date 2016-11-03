@@ -100,7 +100,7 @@ class ClientsController extends Controller
         } else {
             return $this->render('update', [
                 'model' => $model,
-                'model_tariffs' => $TariffsOne,
+                'modelt' => $TariffsOne,
             ]);
         }
     }
