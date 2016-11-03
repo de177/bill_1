@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Clients */
@@ -13,6 +14,11 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin();
 
+    // получаем всех авторов
+    $tariffs_all = \app\models\Gtel_tariffs::find()->all();
+    // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
+    $items_tariffs = ArrayHelper::map($tariffs_all,'ID','name');
+
     $items_status = [
         '0' => 'Inactive',
         '1' => 'Active'
@@ -22,11 +28,17 @@ use yii\widgets\ActiveForm;
         'prompt' => 'Выберите статус...'
     ];
 
+    $params_tariffs = [
+        'prompt' => 'Укажите автора записи'
+    ];
+
     ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'tariff_id')->textInput() ?>
+
+    <?= $form->field($model_tariffs, 'name')->dropDownList($items_tariffs,$params_tariffs) ?>
 
     <?= $form->field($model, 'service_id')->textInput() ?>
 
