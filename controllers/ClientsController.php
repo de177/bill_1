@@ -90,7 +90,7 @@ class ClientsController extends Controller
         }
     }
 
-    public function actionUpdate($id)
+    public function actionUpdate($id,$TariffsOne)
     {
         $model = $this->findModel($id);
         $TariffsOne = Gtel_tariffs::getTariffsOne();
