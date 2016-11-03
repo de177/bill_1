@@ -93,14 +93,14 @@ class ClientsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $modelt = Gtel_tariffs::getTariffsOne();
+        $model_tariffs = Gtel_tariffs::getTariffsOne();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
-                'modelt' => $modelt,
+                'model_tariffs' => $model_tariffs,
             ]);
         }
     }

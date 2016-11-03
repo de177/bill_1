@@ -34,7 +34,7 @@ use yii\helpers\ArrayHelper;
 
     ?>
 
-    <?= $form->field($modelt, 'tariff_id')->dropDownList($items_tariffs,$params_tariffs) ?>
+    <?= $form->field($model_tariffs, 'name')->dropDownList($items_tariffs,$params_tariffs) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
