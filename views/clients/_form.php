@@ -34,11 +34,11 @@ use yii\helpers\ArrayHelper;
 
     ?>
 
+    <?= $form->field($modelt, 'name')->dropDownList($items_tariffs,$params_tariffs) ?>
+
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'tariff_id')->textInput() ?>
-
-    <?= $form->field($model_tariffs, 'name')->dropDownList($items_tariffs,$params_tariffs) ?>
 
     <?= $form->field($model, 'service_id')->textInput() ?>
 
