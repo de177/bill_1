@@ -28,9 +28,6 @@ use yii\helpers\ArrayHelper;
         'prompt' => 'Выберите статус...'
     ];
 
-    $params_tariffs = [
-        'prompt' => 'Укажите автора записи'
-    ];
 
     ?>
 
