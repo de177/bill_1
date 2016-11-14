@@ -68,7 +68,7 @@ echo $form->field($model, 'name')->dropDownList($items,$params);
  //   ]
 
 //]);
-echo $items -> ID;
+echo $items;
 
 ActiveForm::end();
 ?>
