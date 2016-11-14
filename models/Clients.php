@@ -86,7 +86,7 @@ class Clients extends \yii\db\ActiveRecord
         return [
             'id' => 'id',
             'name' => 'Наименование',
-            'tariff_id' => 'Tariff ID',
+            'tariff_id' => 'Тарифный план',
             'service_id' => 'Service ID',
             'service_flag' => 'Service Flag',
             'login' => 'Login',
