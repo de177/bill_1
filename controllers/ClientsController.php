@@ -80,12 +80,14 @@ class ClientsController extends Controller
     public function actionCreate()
     {
         $model = new Clients();
+        $model_tariffs = Gtel_tariffs::getTariffsOne();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
+                'model_tariffs' => $model_tariffs,
             ]);
         }
     }
