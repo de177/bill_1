@@ -42,6 +42,7 @@ class TariffsController extends Controller
             $cl_array = Clients::getAll();
 
             $one = Gtel_tariffs::getOne();
+
             $TariffsOne = Gtel_tariffs::getTariffsOne();
 
             // $searchModel = new Clients();
