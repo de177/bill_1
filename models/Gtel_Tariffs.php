@@ -60,7 +60,6 @@ class Gtel_tariffs extends \yii\db\ActiveRecord
         return [
             'ID' => 'Tariff ID',
             'name' => 'Наименование',
-            'created_date' => 'Дата создания',
 
         ];
     }
