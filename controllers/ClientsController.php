@@ -72,8 +72,11 @@ class ClientsController extends Controller
 
     public function actionView($id)
     {
+        $model_tariffs = Gtel_tariffs::getTariffsOne();
+
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'model_tariffs' => $model_tariffs,
         ]);
     }
 
