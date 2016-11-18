@@ -27,10 +27,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'name',
-            [
-                'attribute'=>'tariff_id',
-                'value'=>$model->$items_tariffs,
-            ],
             'tariff_id',
             'service_id',
             'service_flag',
