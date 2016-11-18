@@ -35,14 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </div>
 
-<div>
 
-<h1>Детальная информация о тарифе</h1>
-
-<h3><?= $one -> ID ?>&nbsp<?= $one -> name ?></h3>
-
-
-</div>
 
 
 
