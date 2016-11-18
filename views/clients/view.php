@@ -22,15 +22,6 @@ $this->params['breadcrumbs'][] = $this->title;
         ]) ?>
     </p>
 
-    <?php
-
-    // получаем всех авторов
-    $tariffs_all = \app\models\Gtel_tariffs::find()->all();
-    // формируем массив, с ключем равным полю 'id' и значением равным полю 'name'
-    $items_tariffs = ArrayHelper::map($tariffs_all,'ID','name');
-
-    ?>
-
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
