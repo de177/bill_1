@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <h1>Детальная информация о тарифе</h1>
 
-<h3><?= $one -> ID ?>&nbsp<?= $one -> name ?></h3>
+<h3><?= $one -> ID ?>&nbsp<?= $one -> name ?>&nbsp<?= $one -> created ?></h3>
 
 
 </div>
