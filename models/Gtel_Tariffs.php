@@ -20,7 +20,7 @@ class Gtel_tariffs extends \yii\db\ActiveRecord
         return [
             [['ID'], 'integer'],
             [['name'], 'safe'],
-            [['created_date'], 'date'],
+
         ];
     }
 
