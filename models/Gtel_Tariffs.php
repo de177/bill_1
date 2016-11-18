@@ -47,7 +47,7 @@ class Gtel_tariffs extends \yii\db\ActiveRecord
     {
         $query = self::find()
 
-            ->where(['ID' => 14])
+            ->where(['ID' => 12])
             ->one();
 
         return $query;
